@@ -42,6 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9211134263191146369}
+  - component: {fileID: 3248324745934864420}
   m_Layer: 0
   m_Name: EnemySetup
   m_TagString: Untagged
@@ -64,8 +65,21 @@ Transform:
   - {fileID: 9211134263805240008}
   - {fileID: 9211134262072394128}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3248324745934864420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211134263191146368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17bdbe14be3709448640363c2df81b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypointsParent: {fileID: 9211134262072394128}
 --- !u!1001 &4899464157760504644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76,7 +90,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4335525522673541513, guid: d72304b40e67640439a170b6c313fa46, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: EnemyAgent
       objectReference: {fileID: 0}
     - target: {fileID: 4335525522673541516, guid: d72304b40e67640439a170b6c313fa46, type: 3}
       propertyPath: m_RootOrder
