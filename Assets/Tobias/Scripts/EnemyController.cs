@@ -56,5 +56,11 @@ public class EnemyController : MonoBehaviour
 
         waypoints = new List<Transform>(childTransforms);
         waypoints.Remove(waypointsParent.transform);
+
+        foreach (Transform waypointTransform in waypoints)
+        {
+            Waypoint waypoint = waypointTransform.gameObject.GetComponent<Waypoint>();
+            waypoint.SetupGizmoText(gameObject.name);
+        }
     }
 }
