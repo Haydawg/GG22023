@@ -97,8 +97,9 @@ public class RootTrailTest : MonoBehaviour
                         newPoint.transform.position = (Vector3)playerPos[playerPos.Count -1];
                         newPoint.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
                         newPoint.transform.localScale = new Vector3(8,8,8);
-                        newPoint.AddComponent<SpriteRenderer>();
+                        SpriteRenderer sprite = newPoint.AddComponent<SpriteRenderer>();
                         newPoint.GetComponent<SpriteRenderer>().sprite = rootSprite;
+                        sprite.sortingOrder = 5;
                         spriteTrail.Add(newPoint);
 
                         timePassed = 0f;

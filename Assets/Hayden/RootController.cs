@@ -114,4 +114,24 @@ public class RootController : MonoBehaviour
             avoidAmount = avoidAmount / Mathf.Max(hitCount, 1);
         return avoidAmount.normalized;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Enemy")
+        {
+            Debug.Log(collision.gameObject.name);
+            rootTrail.MoveCenter();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            Debug.Log(collision.gameObject.name);
+            rootTrail.MoveCenter();
+            Destroy(collision.gameObject);
+        }
+
+    }
 }
