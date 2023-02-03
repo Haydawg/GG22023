@@ -157,12 +157,13 @@ public class RootTrailTest : MonoBehaviour
         for(int i = 0; i < manualPoints.Count; i++)
         {
             spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
-            spriteTrail.RemoveAt(i);
 
-            playerRot.RemoveAt(i);
-            playerPos.RemoveAt(i);
-
-            manualPoints.RemoveAt(i);
         }
+        spriteTrail.Clear();
+
+        playerRot.Clear();
+        playerPos.Clear();
+
+        manualPoints.Clear();
     }
 }
