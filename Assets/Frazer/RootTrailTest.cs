@@ -72,20 +72,11 @@ public class RootTrailTest : MonoBehaviour
                 gameObject.transform.position = gameObject.transform.position + leftVec;
                 moving = true;
             }
-            else
-            {
-                moving = false;
-            }
         }
 
         if (Input.GetKey(KeyCode.Space))
         {
-            reverseTimer += Time.deltaTime;
-            if (reverseTimer >= 0.05f)
-            {
-                ReverseGrowth();
-                reverseTimer = 0;
-            }
+            ReverseGrowth();
         }
         else
         {
@@ -141,17 +132,22 @@ public class RootTrailTest : MonoBehaviour
 
     public void ReverseGrowth()
     {
-        if (playerPos.Count > 0 && playerRot.Count > 0)
+        reverseTimer += Time.deltaTime;
+        if (reverseTimer >= 0.05f)
         {
-            gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
-            playerPos.RemoveAt(playerPos.Count - 1);
+            if (playerPos.Count > 0 && playerRot.Count > 0)
+            {
+                gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
+                playerPos.RemoveAt(playerPos.Count - 1);
 
-            gameObject.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
-            playerRot.RemoveAt(playerRot.Count - 1);
+                gameObject.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
+                playerRot.RemoveAt(playerRot.Count - 1);
 
-            manualPoints.RemoveAt(manualPoints.Count - 1);
-            Destroy(spriteTrail[spriteTrail.Count - 1], 0);
-            spriteTrail.RemoveAt(spriteTrail.Count - 1);
+                manualPoints.RemoveAt(manualPoints.Count - 1);
+                Destroy(spriteTrail[spriteTrail.Count - 1], 0);
+                spriteTrail.RemoveAt(spriteTrail.Count - 1);
+            }
+            reverseTimer = 0;
         }
     }
 
