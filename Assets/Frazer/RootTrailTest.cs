@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class RootTrailTest : MonoBehaviour
 {
-
+    public static RootTrailTest instance;
     public float speed = 2;
     TrailRenderer trail;
     EdgeCollider2D edgeColl;
@@ -18,13 +18,14 @@ public class RootTrailTest : MonoBehaviour
     private float timePassed = 0f;
     public float timeBetweenPoints = 1f;
     public List<Vector2> manualPoints = new List<Vector2>();
-    public float timer = 0;
+    public float reverseTimer = 0;
 
     private bool moving = false;
     private bool maxReached = false;
 
     public List<GameObject> spriteTrail = new List<GameObject>();
-    public Sprite testSprite;
+    public Sprite rootSprite;
+    public Sprite oldRootSprite;
     public GameObject trailContainer;
 
     // Start is called before the first frame update
@@ -33,6 +34,10 @@ public class RootTrailTest : MonoBehaviour
         trail = this.GetComponent<TrailRenderer>();
         GameObject colliderGameObj = new GameObject("TrailCollider", typeof(EdgeCollider2D));
         edgeColl = colliderGameObj.GetComponent<EdgeCollider2D>();
+        edgeColl.isTrigger = true;
+        colliderGameObj.AddComponent<Rigidbody2D>();
+        colliderGameObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        colliderGameObj.AddComponent<RootTrailCollider>();
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
@@ -75,11 +80,11 @@ public class RootTrailTest : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Space))
         {
-            timer += Time.deltaTime;
-            if (timer >= 0.05f)
+            reverseTimer += Time.deltaTime;
+            if (reverseTimer >= 0.05f)
             {
                 ReverseGrowth();
-                timer = 0;
+                reverseTimer = 0;
             }
         }
         else
@@ -102,7 +107,7 @@ public class RootTrailTest : MonoBehaviour
                         newPoint.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
                         newPoint.transform.localScale = new Vector3(8,8,8);
                         newPoint.AddComponent<SpriteRenderer>();
-                        newPoint.GetComponent<SpriteRenderer>().sprite = testSprite;
+                        newPoint.GetComponent<SpriteRenderer>().sprite = rootSprite;
                         spriteTrail.Add(newPoint);
 
                         timePassed = 0f;
@@ -114,6 +119,11 @@ public class RootTrailTest : MonoBehaviour
                     Debug.Log("Maximum length reached");
                 }
             }
+        }
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            MoveCenter();
         }
 
         SetColliderTrail(manualPoints, edgeColl); ;
@@ -142,6 +152,20 @@ public class RootTrailTest : MonoBehaviour
             manualPoints.RemoveAt(manualPoints.Count - 1);
             Destroy(spriteTrail[spriteTrail.Count - 1], 0);
             spriteTrail.RemoveAt(spriteTrail.Count - 1);
+        }
+    }
+
+    private void MoveCenter()
+    {
+        for(int i = 0; i < manualPoints.Count; i++)
+        {
+            spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
+            spriteTrail.RemoveAt(i);
+
+            playerRot.RemoveAt(i);
+            playerPos.RemoveAt(i);
+
+            manualPoints.RemoveAt(i);
         }
     }
 }
