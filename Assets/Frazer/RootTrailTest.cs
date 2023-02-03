@@ -139,7 +139,7 @@ public class RootTrailTest : MonoBehaviour
         collider.SetPoints(points);
     }
 
-    private void ReverseGrowth()
+    public void ReverseGrowth()
     {
         if (playerPos.Count > 0 && playerRot.Count > 0)
         {
@@ -155,7 +155,7 @@ public class RootTrailTest : MonoBehaviour
         }
     }
 
-    private void MoveCenter()
+    public void MoveCenter()
     {
         for(int i = 0; i < manualPoints.Count; i++)
         {
