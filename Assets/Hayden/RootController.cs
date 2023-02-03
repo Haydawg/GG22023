@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RootController : MonoBehaviour
 {
 
@@ -11,23 +12,38 @@ public class RootController : MonoBehaviour
         keyboard
     };
 
+    public static RootController Instance;
+
     [SerializeField] MovementMode movementType;
     [SerializeField] float speed;
-    [SerializeField] Vector2 move;
-    Camera cam;
-    CharacterController controller;
+    private Vector2 move;
+    [SerializeField] float distBetweenPathNodes;
+
+    private Camera cam;
+    private CharacterController controller;
+    List<Transform> pathnodes = new List<Transform>();
+    [SerializeField] float rayAngle;
+    [SerializeField] float rayDist;
+    [SerializeField] float avoidenceWeight;
+
+    List<Vector3> rayVectors;
     // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
         controller = GetComponent<CharacterController>();
+        pathnodes.Add(transform);
+        rayVectors = new List<Vector3>();
+        rayVectors.Add(Quaternion.AngleAxis(rayAngle, Vector3.up) * (Vector3.right + Vector3.up) * rayDist);
+        rayVectors.Add(Quaternion.AngleAxis(-rayAngle, Vector3.up) * (-Vector3.right + Vector3.up) * rayDist);
+        rayVectors.Add(Vector3.up * rayDist);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(cam.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y)));
-        
+
+
         switch (movementType)
         {
             case MovementMode.keyboard:
@@ -36,17 +52,51 @@ public class RootController : MonoBehaviour
                 controller.Move(move * Time.deltaTime);
                 break;
             case MovementMode.mouse:
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-                    move = cam.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-                if (move == new Vector2(transform.position.x, transform.position.y))
+                Vector2 dir = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+                float angle = Mathf.Atan2(-dir.x, dir.y) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+                if (Input.GetKey(KeyCode.Mouse0))
                 {
-                    move = Vector2.zero;
+                    float dist = Vector2.Distance(cam.ScreenToWorldPoint(Input.mousePosition), transform.position);
+                    dir.Normalize();
+                    transform.position += new Vector3(dir.x , dir.y , 0) * speed * Time.deltaTime;
+                    
                 }
-                controller.Move(move * Time.deltaTime);
-
-
                 break;
         }
+       
 
+    }
+    public List<Transform> GetPathNodes()
+    {
+        return pathnodes;
+    }
+
+    Vector2 Avoidance()
+    {
+        Vector2 avoidAmount = Vector2.zero;
+        int hitCount = 0;
+
+        foreach (Vector3 rayVector in rayVectors)
+        {
+            Ray ray = new Ray(transform.position, transform.TransformVector(rayVector));
+            Debug.DrawRay(transform.position, transform.TransformVector(rayVector), Color.red);
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(ray, rayDist);
+            if (hits.Length > 0)
+            {
+                foreach (RaycastHit hit in hits)
+                {
+                    if (hit.collider.tag == "Obstacle")
+                    {
+                        avoidAmount += Vector2.Reflect(transform.TransformVector(ray.direction), hit.normal).normalized * avoidenceWeight;
+                        hitCount++;
+                    }
+                }
+            }
+        }
+        if (hitCount > 0)
+            avoidAmount = avoidAmount / Mathf.Max(hitCount, 1);
+        return avoidAmount;
     }
 }
