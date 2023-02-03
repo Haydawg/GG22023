@@ -20,8 +20,8 @@ public class RootTrailTest : MonoBehaviour
     public List<Vector2> manualPoints = new List<Vector2>();
     public float reverseTimer = 0;
 
-    private bool moving = false;
-    private bool maxReached = false;
+    public bool moving = false;
+    public bool maxReached = false;
 
     public List<GameObject> spriteTrail = new List<GameObject>();
     public Sprite rootSprite;
