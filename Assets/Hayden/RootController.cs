@@ -42,8 +42,6 @@ public class RootController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         switch (movementType)
         {
             case MovementMode.keyboard:
@@ -59,8 +57,13 @@ public class RootController : MonoBehaviour
                 {
                     float dist = Vector2.Distance(cam.ScreenToWorldPoint(Input.mousePosition), transform.position);
                     dir.Normalize();
-                    transform.position += new Vector3(dir.x , dir.y , 0) * speed * Time.deltaTime;
+                    Vector2 avoide = Avoidance();
+                    transform.position += new Vector3(dir.x + avoide.x , dir.y + avoide.y , 0).normalized  * speed * Time.deltaTime;
                     
+                }
+                if(Input.GetKeyDown(KeyCode.Mouse1))
+                {
+
                 }
                 break;
         }
@@ -76,20 +79,22 @@ public class RootController : MonoBehaviour
     {
         Vector2 avoidAmount = Vector2.zero;
         int hitCount = 0;
-
+        RaycastHit2D[] hits;
         foreach (Vector3 rayVector in rayVectors)
         {
-            Ray ray = new Ray(transform.position, transform.TransformVector(rayVector));
+            Ray2D ray = new Ray2D(transform.position, rayVector);
             Debug.DrawRay(transform.position, transform.TransformVector(rayVector), Color.red);
-            RaycastHit[] hits;
-            hits = Physics.RaycastAll(ray, rayDist);
+            
+            hits = Physics2D.RaycastAll(transform.position, rayVector, rayDist);
+            Debug.Log(ray.direction);
+
             if (hits.Length > 0)
             {
-                foreach (RaycastHit hit in hits)
+                foreach (RaycastHit2D hit in hits)
                 {
                     if (hit.collider.tag == "Obstacle")
                     {
-                        avoidAmount += Vector2.Reflect(transform.TransformVector(ray.direction), hit.normal).normalized * avoidenceWeight;
+                        avoidAmount += Vector2.Reflect(ray.direction, hit.normal).normalized * avoidenceWeight;
                         hitCount++;
                     }
                 }
@@ -97,6 +102,6 @@ public class RootController : MonoBehaviour
         }
         if (hitCount > 0)
             avoidAmount = avoidAmount / Mathf.Max(hitCount, 1);
-        return avoidAmount;
+        return avoidAmount.normalized;
     }
 }
