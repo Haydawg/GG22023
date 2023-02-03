@@ -13,7 +13,7 @@ public class RootController : MonoBehaviour
     };
 
     public static RootController Instance;
-
+    [SerializeField] RootTrailTest rootTrail;
     [SerializeField] MovementMode movementType;
     [SerializeField] float speed;
     private Vector2 move;
@@ -53,7 +53,17 @@ public class RootController : MonoBehaviour
                 Vector2 dir = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                 float angle = Mathf.Atan2(-dir.x, dir.y) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-                if (Input.GetKey(KeyCode.Mouse0))
+                if(Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    rootTrail.moving = true;
+
+                }
+                if (Input.GetKeyUp(KeyCode.Mouse0))
+                {
+                    rootTrail.moving = false;
+
+                }
+                if (Input.GetKey(KeyCode.Mouse0) & !rootTrail.maxReached)
                 {
                     float dist = Vector2.Distance(cam.ScreenToWorldPoint(Input.mousePosition), transform.position);
                     dir.Normalize();
@@ -61,11 +71,11 @@ public class RootController : MonoBehaviour
                     transform.position += new Vector3(dir.x + avoide.x , dir.y + avoide.y , 0).normalized  * speed * Time.deltaTime;
                     
                 }
-                if(Input.GetKeyDown(KeyCode.Mouse1))
-                {
+ 
+                if (Input.GetKey(KeyCode.Mouse1))
+                    rootTrail.ReverseGrowth();
 
-                }
-                break;
+                    break;
         }
        
 
@@ -94,7 +104,7 @@ public class RootController : MonoBehaviour
                 {
                     if (hit.collider.tag == "Obstacle")
                     {
-                        avoidAmount += Vector2.Reflect(ray.direction, hit.normal).normalized * avoidenceWeight;
+                        avoidAmount += -ray.direction.normalized * avoidenceWeight;
                         hitCount++;
                     }
                 }
