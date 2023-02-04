@@ -10,6 +10,14 @@ public class GameSessionManager : MonoBehaviour
     [SerializeField]
     private int remainingLives = 3;
 
+    [SerializeField]
+    private UIManager uiManager;
+
+    private void Start()
+    {
+        uiManager.SetupPlayerLives(remainingLives);
+    }
+
     private void Awake()
     {
         EventsManager.Instance.TailCollidedWithEnemy += OnTailCollidedWithEnemy;

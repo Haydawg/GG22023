@@ -45,4 +45,9 @@ public class UIManager : MonoBehaviour
     {
         gameWonUI.SetActive(true);
     }
+
+    public void SetupPlayerLives(int lives)
+    {
+        playerHUD.UpdateLives(lives);
+    }
 }
