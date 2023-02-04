@@ -11,6 +11,7 @@ public class RootTrailCollider : MonoBehaviour
         if (collision.CompareTag("Enemy"))
         {
             RootController.Instance.TrailCollidedWithEnemy(this.gameObject, collision);
+            EventsManager.Instance.TailCollidedWithEnemy?.Invoke();
         }
     }
 }
