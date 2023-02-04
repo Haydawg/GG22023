@@ -87,8 +87,6 @@ public class RootController : MonoBehaviour
                     float dist = Vector2.Distance(cam.ScreenToWorldPoint(Input.mousePosition), transform.position);
                     dir.Normalize();
                     Vector2 avoide = Avoidance();
-                    if(avoide != new Vector2(0,0))
-                        Debug.Log(avoide);
                     transform.position += new Vector3(dir.x + avoide.x, dir.y + avoide.y, 0).normalized * speed * Time.deltaTime;
 
                 }
@@ -117,7 +115,6 @@ public class RootController : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformVector(rayVector), Color.red);
         
             hits = Physics2D.RaycastAll(transform.position, transform.TransformVector(rayVector), rayDist);
-            Debug.Log(hits.Length);
 
             if (hits.Length > 0)
             {
