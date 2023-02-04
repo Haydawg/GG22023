@@ -38,6 +38,7 @@ public class RootTrailTest : MonoBehaviour
         colliderGameObj.AddComponent<Rigidbody2D>();
         colliderGameObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         colliderGameObj.AddComponent<RootTrailCollider>();
+        colliderGameObj.GetComponent<RootTrailCollider>().rootTrail = this;
         colliderGameObj.tag = "PlayerTrail";
 
         playerPos = new ArrayList();
@@ -181,8 +182,45 @@ public class RootTrailTest : MonoBehaviour
         }
     }
 
-    public void GrowBackToPosition(Vector3 position)
+    public void GrowBackToPosition(Vector2 position)
     {
-        // TODO: Find the closest position
+        int nearestIndex = 0;
+        float shortestDistance = 10000;
+        foreach(Vector2 point in manualPoints)
+        {
+            if((point - position).magnitude < shortestDistance)
+            {
+                shortestDistance = (position - point).magnitude;
+                nearestIndex = manualPoints.IndexOf(point);
+            }
+        }
+
+        for(int i = manualPoints.Count-1; i > 0; i--)
+        {
+            if(i > nearestIndex)
+            {
+                manualPoints.RemoveAt(i);
+                spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
+                spriteTrail.RemoveAt(i);
+                playerPos.RemoveAt(i);
+                playerRot.RemoveAt(i);
+            }
+            else if(i == nearestIndex)
+            {
+                Destroy(spriteTrail[i]);
+                spriteTrail.RemoveAt(i);
+                playerPos.RemoveAt(i);
+                playerRot.RemoveAt(i);
+                manualPoints.RemoveAt(i);
+
+                gameObject.transform.position = (Vector3)playerPos[i - 1];
+                gameObject.transform.localEulerAngles = (Vector3)playerRot[i - 1];
+                Destroy(spriteTrail[i-1]);
+                spriteTrail.RemoveAt(i-1);
+                playerPos.RemoveAt(i-1);
+                playerRot.RemoveAt(i-1);
+                manualPoints.RemoveAt(i-1);
+            }
+        }
     }
 }
