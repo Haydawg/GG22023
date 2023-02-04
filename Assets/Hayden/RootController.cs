@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -65,7 +66,7 @@ public class RootController : MonoBehaviour
                 Vector2 dir = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
                 float angle = Mathf.Atan2(-dir.x, dir.y) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-                if(Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0))
                 {
                     rootTrail.moving = true;
 
@@ -80,16 +81,16 @@ public class RootController : MonoBehaviour
                     float dist = Vector2.Distance(cam.ScreenToWorldPoint(Input.mousePosition), transform.position);
                     dir.Normalize();
                     Vector2 avoide = Avoidance();
-                    transform.position += new Vector3(dir.x + avoide.x , dir.y + avoide.y , 0).normalized  * speed * Time.deltaTime;
-                    
+                    transform.position += new Vector3(dir.x + avoide.x, dir.y + avoide.y, 0).normalized * speed * Time.deltaTime;
+
                 }
- 
+
                 if (Input.GetKey(KeyCode.Mouse1))
                     rootTrail.ReverseGrowth();
 
-                    break;
+                break;
         }
-       
+
 
     }
     public List<Transform> GetPathNodes()
@@ -106,7 +107,7 @@ public class RootController : MonoBehaviour
         {
             Ray2D ray = new Ray2D(transform.position, rayVector);
             Debug.DrawRay(transform.position, transform.TransformVector(rayVector), Color.red);
-            
+
             hits = Physics2D.RaycastAll(transform.position, rayVector, rayDist);
             //Debug.Log(ray.direction);
 
