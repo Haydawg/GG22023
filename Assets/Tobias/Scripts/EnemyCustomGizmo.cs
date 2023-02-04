@@ -6,7 +6,6 @@ using UnityEditor;
 
 public class EnemyCustomGizmo : MonoBehaviour
 {
-
 #if UNITY_EDITOR
     void OnDrawGizmos()
     {
