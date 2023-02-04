@@ -278,6 +278,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5900571651701300491, guid: 3c73bf193a1149d44a0490e2f562cfd8, type: 3}
   m_PrefabInstance: {fileID: 211721794}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &390954091 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2669343907933578844, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+  m_PrefabInstance: {fileID: 618489694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d176e07645ddb40b0d480eb357427b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &471396852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -290,6 +301,10 @@ PrefabInstance:
       propertyPath: gameWonUI
       value: 
       objectReference: {fileID: 618489696}
+    - target: {fileID: 209900101239083372, guid: aee5e77e5dc91314dbde11e17d2cfd89, type: 3}
+      propertyPath: playerHUD
+      value: 
+      objectReference: {fileID: 390954091}
     - target: {fileID: 209900101239083372, guid: aee5e77e5dc91314dbde11e17d2cfd89, type: 3}
       propertyPath: gameOverUI
       value: 
@@ -353,6 +368,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
       propertyPath: rootCont
       value: 
@@ -1098,7 +1117,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3351448833025947639, guid: ce019993fdf37f647b5c16b3d81e6f4e, type: 3}
       propertyPath: orthographic size
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6734553397402770911, guid: ce019993fdf37f647b5c16b3d81e6f4e, type: 3}
       propertyPath: moveSpeed

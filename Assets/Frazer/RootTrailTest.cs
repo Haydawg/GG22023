@@ -131,7 +131,9 @@ public class RootTrailTest : MonoBehaviour
             MoveCenter();
         }
 
-        SetColliderTrail(manualPoints, edgeColl); ;
+        SetColliderTrail(manualPoints, edgeColl);
+
+        EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
     private void SetColliderTrail(List<Vector2> trail, EdgeCollider2D collider)
