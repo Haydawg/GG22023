@@ -30,12 +30,11 @@ public class PlayerHUD : MonoBehaviour
 
     public void UpdateLives(int lives)
     {
-        foreach(Transform child in livesPanel.GetComponentsInChildren<Transform>())
+        foreach (Transform child in livesPanel.transform) 
         {
-            if(child != livesPanel.transform)
-                Destroy(child.gameObject);
+            GameObject.Destroy(child.gameObject);
         }
-        for(int i = 0; i < lives; i++)
+        for (int i = 0; i < lives; i++)
         {
             Instantiate(heartPrefab, livesPanel.transform);
         }

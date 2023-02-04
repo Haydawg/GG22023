@@ -96,6 +96,7 @@ public class WindController : MonoBehaviour
         yield return new WaitForSeconds(value);
         windBuilding = false;
         warning = false;
+        causedDamage = false;
         warningAlarm.SetActive(false);
         wind.SetActive(false);
     }
