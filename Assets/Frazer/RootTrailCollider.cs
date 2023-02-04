@@ -17,7 +17,14 @@ public class RootTrailCollider : MonoBehaviour
 
             Vector3 hitLocation = collision.gameObject.transform.position;
             rootTrail.GrowBackToPosition(hitLocation);
-            EventsManager.Instance.TailCollidedWithEnemy?.Invoke();
+
+            EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
+            EnemyType enemyType = enemyController.GetEnemyType();
+
+            if (enemyType == EnemyType.LawnMower || enemyType == EnemyType.WeedWacker)
+            {
+                EventsManager.Instance.TailCollidedWithEnemy?.Invoke();
+            }
         }
     }
 }

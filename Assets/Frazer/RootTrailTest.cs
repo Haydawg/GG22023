@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class RootTrailTest : MonoBehaviour
 {
+    [SerializeField]
+    private int MaxTrailSegments = 50;
+
     public static RootTrailTest instance;
     public float speed = 2;
     TrailRenderer trail;
@@ -85,7 +88,7 @@ public class RootTrailTest : MonoBehaviour
             timePassed = timePassed + Time.deltaTime;
             if (timePassed >= timeBetweenPoints)
             {
-                if (manualPoints.Count < 50)
+                if (manualPoints.Count < MaxTrailSegments)
                 {
                     maxReached = false;
                     if (moving == true)
