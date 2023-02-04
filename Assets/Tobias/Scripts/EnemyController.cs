@@ -68,12 +68,6 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.tag == "Enemy")
-        //{
-        //    Debug.Log(collision.gameObject.name);
-        //    rootTrail.MoveCenter();
-        //    Destroy(collision.gameObject);
-        //}
         Debug.Log("Collision");
 
         if (collision.gameObject.CompareTag("PlayerTrail"))

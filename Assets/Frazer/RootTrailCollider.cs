@@ -17,6 +17,7 @@ public class RootTrailCollider : MonoBehaviour
 
             Vector3 hitLocation = collision.gameObject.transform.position;
             rootTrail.GrowBackToPosition(hitLocation);
+            EventsManager.Instance.TailCollidedWithEnemy?.Invoke();
         }
     }
 }
