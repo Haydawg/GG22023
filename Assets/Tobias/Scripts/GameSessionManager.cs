@@ -15,6 +15,7 @@ public class GameSessionManager : MonoBehaviour
         EventsManager.Instance.TailCollidedWithEnemy += OnTailCollidedWithEnemy;
         EventsManager.Instance.RestartGame += OnRestartGame;
         EventsManager.Instance.PlayerReachedExit += OnPlayerReachedExit;
+        EventsManager.Instance.WindDamage += OnWindCausesDeath;
     }
 
     private void OnDestroy()
@@ -24,6 +25,7 @@ public class GameSessionManager : MonoBehaviour
             EventsManager.Instance.TailCollidedWithEnemy -= OnTailCollidedWithEnemy;
             EventsManager.Instance.RestartGame -= OnRestartGame;
             EventsManager.Instance.PlayerReachedExit -= OnPlayerReachedExit;
+            EventsManager.Instance.WindDamage -= OnWindCausesDeath;
         }
     }
 
@@ -38,8 +40,20 @@ public class GameSessionManager : MonoBehaviour
     private void OnTailCollidedWithEnemy()
     {
         remainingLives--;
+        EventsManager.Instance.UpdateRemainingLivesEvent(remainingLives);
+
         Debug.Log("Live lost! Remaining lives: " + remainingLives);
 
+        if (remainingLives <= 0)
+        {
+            EventsManager.Instance.PlayerHasLostAllLives?.Invoke();
+        }
+    }
+    private void OnWindCausesDeath()
+    {
+        remainingLives--;
+        EventsManager.Instance.UpdateRemainingLivesEvent(remainingLives);
+        Debug.Log("Live lost! Remaining lives: " + remainingLives);
         if (remainingLives <= 0)
         {
             EventsManager.Instance.PlayerHasLostAllLives?.Invoke();

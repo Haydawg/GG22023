@@ -11,6 +11,11 @@ public class PlayerHUD : MonoBehaviour
     [SerializeField] GameObject livesPanel;
     [SerializeField] GameObject heartPrefab;
 
+    private void Awake()
+    {
+        EventsManager.Instance.UpdateRemainingLivesEvent += UpdateLives;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +32,8 @@ public class PlayerHUD : MonoBehaviour
     {
         foreach(Transform child in livesPanel.GetComponentsInChildren<Transform>())
         {
-            Destroy(child.gameObject);
+            if(child != livesPanel.transform)
+                Destroy(child.gameObject);
         }
         for(int i = 0; i < lives; i++)
         {

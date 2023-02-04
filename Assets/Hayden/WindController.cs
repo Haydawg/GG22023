@@ -21,6 +21,7 @@ public class WindController : MonoBehaviour
 
     [SerializeField] bool windBuilding;
     float targetWind;
+    bool causedDamage = false;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -44,7 +45,7 @@ public class WindController : MonoBehaviour
     void Update()
     {
         windChangeTimer += Time.deltaTime;
-        if (windChangeTimer > windRampUpDelay + Random.Range(0, 60));
+        if (windChangeTimer > windRampUpDelay + Random.Range(0, 60))
         {
             windBuilding = true;
             windChangeTimer = 0;
@@ -71,7 +72,13 @@ public class WindController : MonoBehaviour
         {
             if(RootController.Instance.rootTrail.manualPoints.Count > 20)
             {
-                // loose life here
+                // TODO: add root retracting
+                if(!causedDamage)
+                {
+                    EventsManager.Instance.WindDamage?.Invoke();
+                    causedDamage = true;
+                }
+
             }
         }
     }

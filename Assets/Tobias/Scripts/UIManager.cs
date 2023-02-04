@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     private GameObject gameWonUI;
 
     [SerializeField]
-    private GameObject playerHUD;
+    private PlayerHUD playerHUD;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     private void OnUpdateRemainingLives(int lives)
     {
-
+        playerHUD.UpdateLives(lives);
     }
 
     private void OnDestroy()
