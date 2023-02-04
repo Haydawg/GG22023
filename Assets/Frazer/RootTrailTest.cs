@@ -39,7 +39,7 @@ public class RootTrailTest : MonoBehaviour
         colliderGameObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         colliderGameObj.AddComponent<RootTrailCollider>();
         colliderGameObj.GetComponent<RootTrailCollider>().rootTrail = this;
-        colliderGameObj.tag = "PlayerTrail";
+        //colliderGameObj.tag = "PlayerTrail";
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
