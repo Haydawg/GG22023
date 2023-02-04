@@ -3,6 +3,10 @@ using UnityEngine.Events;
 
 public class EventsManager : MonoBehaviour
 {
+    public delegate void MoveCamera(Vector3 position, bool teleport = false);
+
+    public MoveCamera MoveCameraEvent;
+
     public UnityAction TailCollidedWithEnemy;
     public UnityAction PlayerHasLostAllLives;
     public UnityAction RestartGame;

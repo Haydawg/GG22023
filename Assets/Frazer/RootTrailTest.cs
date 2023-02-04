@@ -48,6 +48,11 @@ public class RootTrailTest : MonoBehaviour
         playerRot = new ArrayList();
     }
 
+    private void Start()
+    {
+        EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -90,7 +95,7 @@ public class RootTrailTest : MonoBehaviour
             {
                 if (manualPoints.Count < MaxTrailSegments)
                 {
-                    maxReached = false;
+                    SetMaxReached(false);
                     if (moving == true)
                     {
                         manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
@@ -112,8 +117,7 @@ public class RootTrailTest : MonoBehaviour
                 }
                 else
                 {
-                    maxReached = true;
-                    Debug.Log("Maximum length reached");
+                    SetMaxReached(true);
                 }
             }
         }
@@ -134,6 +138,17 @@ public class RootTrailTest : MonoBehaviour
             points.Add(trail[position]);
         }
         collider.SetPoints(points);
+    }
+
+    private void SetMaxReached(bool reached)
+    {
+        if (maxReached != reached)
+        {
+            if (reached == true)
+            {
+                Debug.Log("Maximum length reached");
+            }
+        }
     }
 
     public void ReverseGrowth()
@@ -160,6 +175,9 @@ public class RootTrailTest : MonoBehaviour
         playerPos.Clear();
 
         manualPoints.Clear();
+
+        // Move camera
+        EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
     public void GrowBack(int times = 1)
@@ -223,6 +241,9 @@ public class RootTrailTest : MonoBehaviour
                 playerPos.RemoveAt(i-1);
                 playerRot.RemoveAt(i-1);
                 manualPoints.RemoveAt(i-1);
+
+                // Move camera
+                EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
             }
         }
     }
