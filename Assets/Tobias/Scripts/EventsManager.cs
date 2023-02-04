@@ -10,6 +10,7 @@ public class EventsManager : MonoBehaviour
     public UnityAction TailCollidedWithEnemy;
     public UnityAction PlayerHasLostAllLives;
     public UnityAction RestartGame;
+    public UnityAction PlayerReachedExit;
 
     public static EventsManager Instance;
 

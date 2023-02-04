@@ -14,6 +14,7 @@ public class GameSessionManager : MonoBehaviour
     {
         EventsManager.Instance.TailCollidedWithEnemy += OnTailCollidedWithEnemy;
         EventsManager.Instance.RestartGame += OnRestartGame;
+        EventsManager.Instance.PlayerReachedExit += OnPlayerReachedExit;
     }
 
     private void OnDestroy()
@@ -22,6 +23,15 @@ public class GameSessionManager : MonoBehaviour
         {
             EventsManager.Instance.TailCollidedWithEnemy -= OnTailCollidedWithEnemy;
             EventsManager.Instance.RestartGame -= OnRestartGame;
+            EventsManager.Instance.PlayerReachedExit -= OnPlayerReachedExit;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R) && Debug.isDebugBuild)
+        {
+            OnRestartGame();
         }
     }
 
@@ -41,11 +51,8 @@ public class GameSessionManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    private void Update()
+    private void OnPlayerReachedExit()
     {
-        if (Input.GetKeyDown(KeyCode.R) && Debug.isDebugBuild)
-        {
-            OnRestartGame();
-        }
+        // TODO: Load next level as soon as we have more than one
     }
 }

@@ -28,6 +28,7 @@ public class RootController : MonoBehaviour
     [SerializeField] float avoidenceWeight;
 
     List<Vector3> rayVectors;
+    bool disableControlsOnReachingExit;
 
     private void Awake()
     {
@@ -55,6 +56,11 @@ public class RootController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (disableControlsOnReachingExit)
+        {
+            return;
+        }
+
         switch (movementType)
         {
             case MovementMode.keyboard:
@@ -135,6 +141,12 @@ public class RootController : MonoBehaviour
             Debug.Log(collision.gameObject.name);
             rootTrail.MoveCenter();
             Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("Exit"))
+        {
+            Debug.Log("Player reached exit");
+            EventsManager.Instance.PlayerReachedExit?.Invoke();
+            disableControlsOnReachingExit = true;
         }
     }
 

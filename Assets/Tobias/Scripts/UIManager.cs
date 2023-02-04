@@ -8,11 +8,15 @@ public class UIManager : MonoBehaviour
     private GameObject gameOverUI;
 
     [SerializeField]
+    private GameObject gameWonUI;
+
+    [SerializeField]
     private GameObject playerHUD;
 
     private void Start()
     {
         EventsManager.Instance.PlayerHasLostAllLives += ShowGameOverUI;
+        EventsManager.Instance.PlayerReachedExit += OnPlayerReachedExit;
     }
 
     private void OnDestroy()
@@ -20,11 +24,17 @@ public class UIManager : MonoBehaviour
         if (EventsManager.Instance)
         {
             EventsManager.Instance.PlayerHasLostAllLives -= ShowGameOverUI;
+            EventsManager.Instance.PlayerReachedExit -= OnPlayerReachedExit;
         }
     }
 
     private void ShowGameOverUI()
     {
         gameOverUI.SetActive(true);
+    }
+
+    private void OnPlayerReachedExit()
+    {
+        gameWonUI.SetActive(true);
     }
 }
