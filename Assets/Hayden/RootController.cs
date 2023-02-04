@@ -13,7 +13,7 @@ public class RootController : MonoBehaviour
     };
 
     public static RootController Instance;
-    [SerializeField] RootTrailTest rootTrail;
+    public RootTrailTest rootTrail;
     [SerializeField] MovementMode movementType;
     [SerializeField] float speed;
     private Vector2 move;
@@ -27,6 +27,18 @@ public class RootController : MonoBehaviour
     [SerializeField] float avoidenceWeight;
 
     List<Vector3> rayVectors;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {

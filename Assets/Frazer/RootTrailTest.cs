@@ -159,6 +159,7 @@ public class RootTrailTest : MonoBehaviour
             spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
 
         }
+        
         spriteTrail.Clear();
 
         playerRot.Clear();
