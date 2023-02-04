@@ -1115,10 +1115,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3351448833025947639, guid: ce019993fdf37f647b5c16b3d81e6f4e, type: 3}
-      propertyPath: orthographic size
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6734553397402770911, guid: ce019993fdf37f647b5c16b3d81e6f4e, type: 3}
       propertyPath: moveSpeed
       value: 22.75
