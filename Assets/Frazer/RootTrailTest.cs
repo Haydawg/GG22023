@@ -148,6 +148,7 @@ public class RootTrailTest : MonoBehaviour
             {
                 Debug.Log("Maximum length reached");
             }
+            maxReached = reached;
         }
     }
 
