@@ -49,7 +49,6 @@ public class RootController : MonoBehaviour
         rayVectors.Add(Quaternion.AngleAxis(rayAngle, Vector3.up) * (Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Quaternion.AngleAxis(-rayAngle, Vector3.up) * (-Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Vector3.up * rayDist);
-        Instance = this;
     }
 
     // Update is called once per frame
