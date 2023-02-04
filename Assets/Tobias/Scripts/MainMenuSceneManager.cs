@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 #endif
 
-public class MainMenuFlowManager : MonoBehaviour
+public class MainMenuSceneManager : MonoBehaviour
 {
     [SerializeField]
     private string gameScene;

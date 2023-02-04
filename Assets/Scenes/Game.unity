@@ -459,6 +459,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2478273063799172594, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2478273063799172597, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2478273063999700857, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
       propertyPath: m_Name
       value: UI
@@ -545,6 +553,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2478273063999700861, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2669343907933578846, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304509540465044569, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304509540875619824, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6304509540875619839, guid: d2b529b5c8398fe48b4b36ab3964503c, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

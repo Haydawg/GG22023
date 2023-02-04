@@ -12,6 +12,7 @@ public class EventsManager : MonoBehaviour
     public UnityAction TailCollidedWithEnemy;
     public UnityAction PlayerHasLostAllLives;
     public UnityAction RestartGame;
+    public UnityAction QuitGame;
     public UnityAction PlayerReachedExit;
     public UnityAction WindDamage;
 

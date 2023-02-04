@@ -21,9 +21,11 @@ public class GameSessionManager : MonoBehaviour
     private void Awake()
     {
         EventsManager.Instance.TailCollidedWithEnemy += OnTailCollidedWithEnemy;
-        EventsManager.Instance.RestartGame += OnRestartGame;
         EventsManager.Instance.PlayerReachedExit += OnPlayerReachedExit;
         EventsManager.Instance.WindDamage += OnWindCausesDeath;
+        EventsManager.Instance.PlayerHasLostAllLives += OnPlayerHasLostAllLives;
+
+        Time.timeScale = 1;
     }
 
     private void OnDestroy()
@@ -31,50 +33,51 @@ public class GameSessionManager : MonoBehaviour
         if (EventsManager.Instance)
         {
             EventsManager.Instance.TailCollidedWithEnemy -= OnTailCollidedWithEnemy;
-            EventsManager.Instance.RestartGame -= OnRestartGame;
             EventsManager.Instance.PlayerReachedExit -= OnPlayerReachedExit;
             EventsManager.Instance.WindDamage -= OnWindCausesDeath;
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R) && Debug.isDebugBuild)
-        {
-            OnRestartGame();
+            EventsManager.Instance.PlayerHasLostAllLives -= OnPlayerHasLostAllLives;
         }
     }
 
     private void OnTailCollidedWithEnemy()
     {
-        remainingLives--;
-        EventsManager.Instance.UpdateRemainingLivesEvent(remainingLives);
-
-        Debug.Log("Live lost! Remaining lives: " + remainingLives);
-
-        if (remainingLives <= 0)
-        {
-            EventsManager.Instance.PlayerHasLostAllLives?.Invoke();
-        }
+        Debug.Log("Live lost, reason: Tail collision with enemy");
+        PlayerLosesOneLive();
     }
+
     private void OnWindCausesDeath()
     {
-        remainingLives--;
-        EventsManager.Instance.UpdateRemainingLivesEvent(remainingLives);
-        Debug.Log("Live lost! Remaining lives: " + remainingLives);
-        if (remainingLives <= 0)
-        {
-            EventsManager.Instance.PlayerHasLostAllLives?.Invoke();
-        }
-    }
-
-    private void OnRestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("Live lost, reason: Wind");
+        PlayerLosesOneLive();
     }
 
     private void OnPlayerReachedExit()
     {
         // TODO: Load next level as soon as we have more than one
+        PauseGame();
+    }
+
+    private void PlayerLosesOneLive()
+    {
+        remainingLives--;
+        EventsManager.Instance.UpdateRemainingLivesEvent(remainingLives);
+
+        Debug.Log("Live lost! Remaining lives: " + remainingLives);
+
+        if (remainingLives <= 0)
+        {
+            EventsManager.Instance.PlayerHasLostAllLives?.Invoke();
+        }
+    }
+
+    private void OnPlayerHasLostAllLives()
+    {
+        PauseGame();
+    }
+
+    private void PauseGame()
+    {
+        Debug.Log("Time scale 0");
+        Time.timeScale = 0;
     }
 }

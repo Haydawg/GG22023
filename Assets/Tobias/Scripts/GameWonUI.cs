@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GameOverUI : MonoBehaviour
+public class GameWonUI : MonoBehaviour
 {
     [SerializeField]
     private Button restartButton;
@@ -12,7 +12,9 @@ public class GameOverUI : MonoBehaviour
     private void Start()
     {
         restartButton.onClick.AddListener(EventsManager.Instance.RestartGame);
+        restartButton.onClick.AddListener(() => Debug.Log("RESTART GAME"));
         quitButton.onClick.AddListener(EventsManager.Instance.QuitGame);
+        quitButton.onClick.AddListener(() => Debug.Log("QUIT GAME"));
     }
 
     private void OnDestroy()
