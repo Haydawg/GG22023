@@ -136,13 +136,7 @@ public class RootController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
-        {
-            Debug.Log(collision.gameObject.name);
-            rootTrail.MoveCenter();
-            Destroy(collision.gameObject);
-        }
-        else if (collision.CompareTag("Exit"))
+        if (collision.CompareTag("Exit"))
         {
             Debug.Log("Player reached exit");
             EventsManager.Instance.PlayerReachedExit?.Invoke();
@@ -154,6 +148,6 @@ public class RootController : MonoBehaviour
     {
         Debug.Log("Trail collision");
         //rootTrail.GrowBack(20);
-        rootTrail.GrowBackToPosition(collision.transform.position);
+        rootTrail.GrowBackToPosition(collision.transform.position, collision.gameObject);
     }
 }

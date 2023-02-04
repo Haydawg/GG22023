@@ -16,7 +16,7 @@ public class RootTrailCollider : MonoBehaviour
             //RootController.Instance.TrailCollidedWithEnemy(this.gameObject, collision);
 
             Vector3 hitLocation = collision.gameObject.transform.position;
-            rootTrail.GrowBackToPosition(hitLocation);
+            rootTrail.GrowBackToPosition(hitLocation, collision.gameObject);
 
             EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
             EnemyType enemyType = enemyController.GetEnemyType();

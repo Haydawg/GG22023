@@ -208,7 +208,7 @@ public class RootTrailTest : MonoBehaviour
         }
     }
 
-    public void GrowBackToPosition(Vector2 position)
+    public void GrowBackToPosition(Vector2 position, GameObject other)
     {
         int nearestIndex = 0;
         float shortestDistance = 10000;
@@ -219,6 +219,12 @@ public class RootTrailTest : MonoBehaviour
                 shortestDistance = (position - point).magnitude;
                 nearestIndex = manualPoints.IndexOf(point);
             }
+        }
+
+        if(nearestIndex == manualPoints.Count-1)
+        {
+            Destroy(other);
+            MoveCenter();
         }
 
         for(int i = manualPoints.Count-1; i > 0; i--)
