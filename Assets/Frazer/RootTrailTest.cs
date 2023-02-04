@@ -172,7 +172,7 @@ public class RootTrailTest : MonoBehaviour
 
     public void MoveCenter()
     {
-        for(int i = 0; i < manualPoints.Count-1; i++)
+        for(int i = 0; i < manualPoints.Count; i++)
         {
             spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
 
