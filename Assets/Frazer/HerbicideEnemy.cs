@@ -21,12 +21,14 @@ public class HerbicideEnemy : MonoBehaviour
         GameObject colliderGameObjL = new GameObject("HerbicideColliderLeft", typeof(EdgeCollider2D));
         leftEdgeColl = colliderGameObjL.GetComponent<EdgeCollider2D>();
         colliderGameObjL.AddComponent<HerbicideCollider>();
-        colliderGameObjL.tag = "Enemy";
+        colliderGameObjL.tag = "Herbicides";
+        leftEdgeColl.isTrigger = true;
 
         GameObject colliderGameObjR = new GameObject("HerbicideColliderRight", typeof(EdgeCollider2D));
         rightEdgeColl = colliderGameObjR.GetComponent<EdgeCollider2D>();
         colliderGameObjR.AddComponent<HerbicideCollider>();
-        colliderGameObjR.tag = "Enemy";
+        colliderGameObjR.tag = "Herbicides";
+        leftEdgeColl.isTrigger = true;
     }
 
     // Update is called once per frame

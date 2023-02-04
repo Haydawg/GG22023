@@ -9,22 +9,27 @@ public class RootTrailCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("Trigger2D Hit, " + collision.gameObject.name);
-
         if (collision.CompareTag("Enemy"))
         {
-            //RootController.Instance.TrailCollidedWithEnemy(this.gameObject, collision);
-
-            Vector3 hitLocation = collision.gameObject.transform.position;
-            rootTrail.GrowBackToPosition(hitLocation);
-
             EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
             EnemyType enemyType = enemyController.GetEnemyType();
 
             if (enemyType == EnemyType.LawnMower || enemyType == EnemyType.WeedWacker)
             {
+                Vector3 hitLocation = collision.gameObject.transform.position;
+                rootTrail.GrowBackToPosition(hitLocation);
                 EventsManager.Instance.TailCollidedWithEnemy?.Invoke();
             }
+            else if (enemyType == EnemyType.Herbicides)
+            {
+                Debug.Log("Trail collided with herbicides enemy, taking no damage");
+            }
+        }
+        else if (collision.CompareTag("Herbicides"))
+        {
+            Vector3 hitLocation = collision.gameObject.transform.position;
+            rootTrail.GrowBackToPosition(hitLocation);
+            EventsManager.Instance.TailCollidedWithHerbicides?.Invoke();
         }
     }
 }
