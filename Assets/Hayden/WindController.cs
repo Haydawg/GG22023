@@ -17,6 +17,10 @@ public class WindController : MonoBehaviour
     [SerializeField] Image windLevelMeter;
     [SerializeField] GameObject warningAlarm;
 
+    [SerializeField] float windRampUpDelay;
+
+    [SerializeField] bool windBuilding;
+    float targetWind;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -40,30 +44,36 @@ public class WindController : MonoBehaviour
     void Update()
     {
         windChangeTimer += Time.deltaTime;
-
-        if (windChangeTimer > windChangeInterval)
+        if(windChangeTimer > windRampUpDelay)
         {
-            float amount = Random.Range(-1f, 1f);
-            if (windLevel + amount > 0 & windLevel + amount < 20)
-                windLevel += amount;
+            windBuilding = true;
             windChangeTimer = 0;
         }
-
-        if(windLevel > 15)
+        if (!windBuilding)
         {
-            if(!warning)
-                Warning();
+            targetWind = 5 + (Mathf.Sin(Time.timeSinceLevelLoad * 0.5f));
+            if (targetWind > 0 & targetWind < 10)
+                windLevel = targetWind;
+            
         }
         else
         {
-            if (warning)
+            if(!warning)
+                Warning();
+            if(windLevel < 20)
             {
-                warningAlarm.SetActive(false);
-                warning = false;
-                wind.SetActive(false);
+                windLevel += Time.deltaTime;
             }
         }
+
         windLevelMeter.fillAmount = windLevel / 20;
+        if(windLevel >= 19)
+        {
+            if(RootController.Instance.rootTrail.manualPoints.Count > 20)
+            {
+                // loose life here
+            }
+        }
     }
 
     void Warning()
@@ -71,6 +81,15 @@ public class WindController : MonoBehaviour
         warning = true;
         warningAlarm.SetActive(true);
         wind.SetActive(true);
-
+        StartCoroutine(WindLength(windChangeInterval));
+    }
+    
+    IEnumerator WindLength(float value)
+    {
+        yield return new WaitForSeconds(value);
+        windBuilding = false;
+        warning = false;
+        warningAlarm.SetActive(false);
+        wind.SetActive(false);
     }
 }
