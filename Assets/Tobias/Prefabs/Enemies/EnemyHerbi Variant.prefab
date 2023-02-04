@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255290121}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3160799908864422883}
+  m_Father: {fileID: 8949395435636240857}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &255290123
@@ -158,12 +158,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385030641}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3160799908864422883}
+  m_Father: {fileID: 8949395435636240857}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &1385030643
@@ -268,6 +268,39 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!1 &3948220844987061318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8949395435636240857}
+  m_Layer: 0
+  m_Name: TrailContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8949395435636240857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3948220844987061318}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 255290122}
+  - {fileID: 1385030642}
+  m_Father: {fileID: 3160799908864422883}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6055634001394997759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,11 +311,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9211134263191146368, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_Name
-      value: EnemyHerbi
+      value: EnemyHerbi Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -332,10 +365,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9211134264049822236, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 255290122}
-    - targetCorrespondingSourceObject: {fileID: 9211134264049822236, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1385030642}
+      addedObject: {fileID: 8949395435636240857}
     - targetCorrespondingSourceObject: {fileID: 9211134262072394128, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6344551407705052601}
@@ -360,6 +390,8 @@ MonoBehaviour:
   speed: 0.02
   leftTrail: {fileID: 255290123}
   rightTrail: {fileID: 1385030643}
+  trailContainer: {fileID: 0}
+  enemyCont: {fileID: 0}
 --- !u!4 &3160799908864422883 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9211134264049822236, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}

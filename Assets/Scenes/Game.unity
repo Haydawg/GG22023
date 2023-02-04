@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: timeBetweenPoints
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+      propertyPath: distanceBetweenPoints
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1528879182803926917, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
       propertyPath: m_Enabled
       value: 1

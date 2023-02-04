@@ -37,6 +37,7 @@ public class EnemyController : MonoBehaviour
         }
 
         visuals.flipX = navMeshAgent.velocity.x < 0;
+        
     }
 
     private void SetNextWaypoint()
@@ -76,6 +77,11 @@ public class EnemyController : MonoBehaviour
         //}
     }
     **/
+
+    public Transform GetWaypoint()
+    {
+        return waypoints[currentWaypointIndex];
+    }
 
     public EnemyType GetEnemyType()
     {

@@ -10,6 +10,9 @@ public class HerbicideEnemy : MonoBehaviour
     public TrailRenderer rightTrail;
     EdgeCollider2D leftEdgeColl;
     EdgeCollider2D rightEdgeColl;
+    public GameObject trailContainer;
+    public EnemyController enemyCont;
+    private Transform waypoint;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +32,16 @@ public class HerbicideEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKey(KeyCode.D))
+        {
+            Vector3 rightvec = gameObject.transform.right * speed;
+            gameObject.transform.position = gameObject.transform.position + rightvec;
+            trailContainer.transform.localEulerAngles = new Vector3(0, 0, -90);
+        }
+
+        waypoint = enemyCont.GetWaypoint();
+        trailContainer.transform.LookAt(waypoint);
+
         SetColliderTrail(leftTrail, rightTrail, leftEdgeColl, rightEdgeColl);
     }
 

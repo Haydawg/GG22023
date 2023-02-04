@@ -15,11 +15,12 @@ public class RootTrailTest : MonoBehaviour
 
     static List<EdgeCollider2D> unusedColliders = new List<EdgeCollider2D>();
 
-    private ArrayList playerPos;
+    public ArrayList playerPos;
     private ArrayList playerRot;
 
     private float timePassed = 0f;
     public float timeBetweenPoints = 1f;
+    public float distanceBetweenPoints = 2;
     public List<Vector2> manualPoints = new List<Vector2>();
     private float reverseTimer = 0;
 
@@ -36,7 +37,6 @@ public class RootTrailTest : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        trail = this.GetComponent<TrailRenderer>();
         GameObject colliderGameObj = new GameObject("TrailCollider", typeof(EdgeCollider2D));
         edgeColl = colliderGameObj.GetComponent<EdgeCollider2D>();
         edgeColl.isTrigger = true;
@@ -54,6 +54,9 @@ public class RootTrailTest : MonoBehaviour
 
     private void Start()
     {
+        manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
+        playerPos.Add(gameObject.transform.position);
+        playerRot.Add(gameObject.transform.localEulerAngles);
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
@@ -94,8 +97,8 @@ public class RootTrailTest : MonoBehaviour
         }
         else
         {
-            timePassed = timePassed + Time.deltaTime;
-            if (timePassed >= timeBetweenPoints)
+            Vector2 playerPointDistance = ((new Vector2(gameObject.transform.position.x, gameObject.transform.position.y)) - manualPoints[manualPoints.Count-1]);
+            if (playerPointDistance.magnitude > distanceBetweenPoints)
             {
                 if (manualPoints.Count < MaxTrailSegments)
                 {
@@ -170,7 +173,7 @@ public class RootTrailTest : MonoBehaviour
 
     public void MoveCenter()
     {
-        for(int i = 0; i < manualPoints.Count; i++)
+        for(int i = 0; i < manualPoints.Count-1; i++)
         {
             spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
 
@@ -183,6 +186,10 @@ public class RootTrailTest : MonoBehaviour
 
         manualPoints.Clear();
 
+        manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
+        playerPos.Add(gameObject.transform.position);
+        playerRot.Add(gameObject.transform.localEulerAngles);
+
         // Move camera
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
@@ -191,7 +198,7 @@ public class RootTrailTest : MonoBehaviour
     {
         for (int i = 0; i < times; i++)
         {
-            if (playerPos.Count > 0 && playerRot.Count > 0)
+            if (playerPos.Count > 1 && playerRot.Count > 1)
             {
                 gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
                 playerPos.RemoveAt(playerPos.Count - 1);
@@ -247,7 +254,7 @@ public class RootTrailTest : MonoBehaviour
                 spriteTrail.RemoveAt(i-1);
                 playerPos.RemoveAt(i-1);
                 playerRot.RemoveAt(i-1);
-                manualPoints.RemoveAt(i-1);
+                //manualPoints.RemoveAt(i-1);
 
                 // Move camera
                 EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
