@@ -37,6 +37,7 @@ public class RootController : MonoBehaviour
         rayVectors.Add(Quaternion.AngleAxis(rayAngle, Vector3.up) * (Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Quaternion.AngleAxis(-rayAngle, Vector3.up) * (-Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Vector3.up * rayDist);
+        Instance = this;
     }
 
     // Update is called once per frame
@@ -96,7 +97,7 @@ public class RootController : MonoBehaviour
             Debug.DrawRay(transform.position, transform.TransformVector(rayVector), Color.red);
             
             hits = Physics2D.RaycastAll(transform.position, rayVector, rayDist);
-            Debug.Log(ray.direction);
+            //Debug.Log(ray.direction);
 
             if (hits.Length > 0)
             {
@@ -115,15 +116,6 @@ public class RootController : MonoBehaviour
         return avoidAmount.normalized;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.collider.tag == "Enemy")
-        {
-            Debug.Log(collision.gameObject.name);
-            rootTrail.MoveCenter();
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Enemy")
@@ -132,6 +124,12 @@ public class RootController : MonoBehaviour
             rootTrail.MoveCenter();
             Destroy(collision.gameObject);
         }
+    }
 
+    public void TrailCollidedWithEnemy(GameObject trailColliderObject, Collider2D collision)
+    {
+        Debug.Log("Trail collision");
+        //rootTrail.GrowBack(20);
+        rootTrail.GrowBackToPosition(collision.transform.position);
     }
 }

@@ -16,7 +16,7 @@ public class EnemyCustomGizmo : MonoBehaviour
             return;
         }
             
-        Handles.Label(transform.position + new Vector3(0.25f, 0), gameObject.transform.parent.name);
+        Handles.Label(transform.position + new Vector3(0.5f, 0.1f), "<color=green>" + gameObject.transform.parent.name + "</color>", new GUIStyle { richText = true, fontStyle = FontStyle.Bold });
     }
 #endif
 }
