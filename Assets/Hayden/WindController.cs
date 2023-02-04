@@ -44,7 +44,7 @@ public class WindController : MonoBehaviour
     void Update()
     {
         windChangeTimer += Time.deltaTime;
-        if(windChangeTimer > windRampUpDelay)
+        if (windChangeTimer > windRampUpDelay + Random.Range(0, 60));
         {
             windBuilding = true;
             windChangeTimer = 0;
