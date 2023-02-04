@@ -55,15 +55,16 @@ public class HerbicideEnemy : MonoBehaviour
     {
         List<Vector2> leftPoints = new List<Vector2>();
         List<Vector2> rightPoints = new List<Vector2>();
-        for (int position = 0; position < trailRight.positionCount; position++)
+        for (int position = 0; position < trailRight.positionCount-1 || position < trailLeft.positionCount-1; position++)
         {
+            Debug.Log(position);
             Vector3 rawLeft = trailLeft.GetPosition(position);
             Vector3 rawRight = trailRight.GetPosition(position);
 
             leftPoints.Add(rawLeft);
             rightPoints.Add(rawRight);
         }
-        leftEdgeColl.SetPoints(leftPoints);
-        rightEdgeColl.SetPoints(rightPoints);
+        leftCollider.SetPoints(leftPoints);
+        rightCollider.SetPoints(rightPoints);
     }
 }
