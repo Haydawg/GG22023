@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerHUD : MonoBehaviour
 {
     [SerializeField] Text lengthUsed;
-    [SerializeField] Text lives;
+
 
     [SerializeField] GameObject livesPanel;
     [SerializeField] GameObject heartPrefab;
@@ -25,10 +25,10 @@ public class PlayerHUD : MonoBehaviour
 
     public void UpdateLives(int lives)
     {
-        //foreach(Transform child in livesPanel.GetComponentsInChildren<Transform>())
-        //{
-        //    Destroy(child.gameObject);
-        //}
+        foreach(Transform child in livesPanel.GetComponentsInChildren<Transform>())
+        {
+            Destroy(child.gameObject);
+        }
         for(int i = 0; i < lives; i++)
         {
             Instantiate(heartPrefab, livesPanel.transform);
