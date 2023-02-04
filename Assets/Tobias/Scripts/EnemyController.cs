@@ -69,10 +69,10 @@ public class EnemyController : MonoBehaviour
     {
         Debug.Log("Collision");
 
-        if (collision.gameObject.CompareTag("PlayerTrail"))
-        {
-            Debug.Log("Player Trail collision");
-        }
+        //if (collision.gameObject.CompareTag("PlayerTrail"))
+        //{
+        //    Debug.Log("Player Trail collision");
+        //}
     }
 
     public EnemyType GetEnemyType()
