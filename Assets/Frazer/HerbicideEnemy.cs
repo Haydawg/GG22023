@@ -18,36 +18,18 @@ public class HerbicideEnemy : MonoBehaviour
         GameObject colliderGameObjL = new GameObject("HerbicideColliderLeft", typeof(EdgeCollider2D));
         leftEdgeColl = colliderGameObjL.GetComponent<EdgeCollider2D>();
         colliderGameObjL.AddComponent<HerbicideCollider>();
+        colliderGameObjL.tag = "Enemy";
 
         GameObject colliderGameObjR = new GameObject("HerbicideColliderRight", typeof(EdgeCollider2D));
         rightEdgeColl = colliderGameObjR.GetComponent<EdgeCollider2D>();
         colliderGameObjR.AddComponent<HerbicideCollider>();
+        colliderGameObjR.tag = "Enemy";
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            Vector3 forVec = gameObject.transform.up * speed;
-            gameObject.transform.position = gameObject.transform.position + forVec;
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            Vector3 rightvec = gameObject.transform.right * speed;
-            gameObject.transform.position = gameObject.transform.position + rightvec;
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            Vector3 downVec = gameObject.transform.up * -1 * speed;
-            gameObject.transform.position = gameObject.transform.position + downVec;
-        }
-        else if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            Vector3 leftVec = gameObject.transform.right * -1 * speed;
-            gameObject.transform.position = gameObject.transform.position + leftVec;
-        }
-
+       
         SetColliderTrail(leftTrail, rightTrail, leftEdgeColl, rightEdgeColl);
     }
 
