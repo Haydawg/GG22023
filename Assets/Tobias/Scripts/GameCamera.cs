@@ -12,6 +12,7 @@ public class GameCamera : MonoBehaviour
     private void Awake()
     {
         EventsManager.Instance.MoveCameraEvent += SetTargetPosition;
+        targetPosition = gameObject.transform.position;
     }
 
     private void OnDestroy()
@@ -25,7 +26,6 @@ public class GameCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetPosition = gameObject.transform.position;
     }
 
     // Update is called once per frame
