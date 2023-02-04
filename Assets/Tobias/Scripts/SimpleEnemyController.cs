@@ -5,7 +5,5 @@ using UnityEngine;
 public class SimpleEnemyController : MonoBehaviour
 {
     [SerializeField]
-    private List<Transform> patrolPoints;
-
-    
+    private List<Transform> patrolPoints;    
 }

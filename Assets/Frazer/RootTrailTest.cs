@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class RootTrailTest : MonoBehaviour
 {
+    [SerializeField]
+    private int MaxTrailSegments = 50;
+
     public static RootTrailTest instance;
     public float speed = 2;
     TrailRenderer trail;
@@ -28,6 +31,8 @@ public class RootTrailTest : MonoBehaviour
     public Sprite oldRootSprite;
     public GameObject trailContainer;
 
+    private GameObject trailCollider;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -38,10 +43,18 @@ public class RootTrailTest : MonoBehaviour
         colliderGameObj.AddComponent<Rigidbody2D>();
         colliderGameObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         colliderGameObj.AddComponent<RootTrailCollider>();
-        colliderGameObj.tag = "PlayerTrail";
+        colliderGameObj.GetComponent<RootTrailCollider>().rootTrail = this;
+        //colliderGameObj.tag = "PlayerTrail";
+
+        trailCollider = colliderGameObj;
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
+    }
+
+    private void Start()
+    {
+        EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
     // Update is called once per frame
@@ -84,9 +97,9 @@ public class RootTrailTest : MonoBehaviour
             timePassed = timePassed + Time.deltaTime;
             if (timePassed >= timeBetweenPoints)
             {
-                if (manualPoints.Count < 50)
+                if (manualPoints.Count < MaxTrailSegments)
                 {
-                    maxReached = false;
+                    SetMaxReached(false);
                     if (moving == true)
                     {
                         manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
@@ -108,8 +121,7 @@ public class RootTrailTest : MonoBehaviour
                 }
                 else
                 {
-                    maxReached = true;
-                    Debug.Log("Maximum length reached");
+                    SetMaxReached(true);
                 }
             }
         }
@@ -130,6 +142,18 @@ public class RootTrailTest : MonoBehaviour
             points.Add(trail[position]);
         }
         collider.SetPoints(points);
+    }
+
+    private void SetMaxReached(bool reached)
+    {
+        if (maxReached != reached)
+        {
+            if (reached == true)
+            {
+                Debug.Log("Maximum length reached");
+            }
+            maxReached = reached;
+        }
     }
 
     public void ReverseGrowth()
@@ -156,6 +180,9 @@ public class RootTrailTest : MonoBehaviour
         playerPos.Clear();
 
         manualPoints.Clear();
+
+        // Move camera
+        EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
     public void GrowBack(int times = 1)
@@ -181,8 +208,48 @@ public class RootTrailTest : MonoBehaviour
         }
     }
 
-    public void GrowBackToPosition(Vector3 position)
+    public void GrowBackToPosition(Vector2 position)
     {
-        // TODO: Find the closest position
+        int nearestIndex = 0;
+        float shortestDistance = 10000;
+        foreach(Vector2 point in manualPoints)
+        {
+            if((point - position).magnitude < shortestDistance)
+            {
+                shortestDistance = (position - point).magnitude;
+                nearestIndex = manualPoints.IndexOf(point);
+            }
+        }
+
+        for(int i = manualPoints.Count-1; i > 0; i--)
+        {
+            if(i > nearestIndex)
+            {
+                manualPoints.RemoveAt(i);
+                spriteTrail[i].GetComponent<SpriteRenderer>().sprite = oldRootSprite;
+                spriteTrail.RemoveAt(i);
+                playerPos.RemoveAt(i);
+                playerRot.RemoveAt(i);
+            }
+            else if(i == nearestIndex)
+            {
+                Destroy(spriteTrail[i]);
+                spriteTrail.RemoveAt(i);
+                playerPos.RemoveAt(i);
+                playerRot.RemoveAt(i);
+                manualPoints.RemoveAt(i);
+
+                gameObject.transform.position = (Vector3)playerPos[i - 1];
+                gameObject.transform.localEulerAngles = (Vector3)playerRot[i - 1];
+                Destroy(spriteTrail[i-1]);
+                spriteTrail.RemoveAt(i-1);
+                playerPos.RemoveAt(i-1);
+                playerRot.RemoveAt(i-1);
+                manualPoints.RemoveAt(i-1);
+
+                // Move camera
+                EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
+            }
+        }
     }
 }

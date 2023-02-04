@@ -1,20 +1,19 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour
 {
     [SerializeField]
     private GameObject waypointsParent;
 
+    [SerializeField]
+    private EnemyType enemyType = EnemyType.LawnMower;
+
     private List<Transform> waypoints;
     private NavMeshAgent navMeshAgent;
     private int currentWaypointIndex;
     private SpriteRenderer visuals;
-
-    public UnityEvent myEvent;
 
     private void Start()
     {
@@ -68,17 +67,16 @@ public class EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //if (collision.tag == "Enemy")
-        //{
-        //    Debug.Log(collision.gameObject.name);
-        //    rootTrail.MoveCenter();
-        //    Destroy(collision.gameObject);
-        //}
         Debug.Log("Collision");
 
         if (collision.gameObject.CompareTag("PlayerTrail"))
         {
             Debug.Log("Player Trail collision");
         }
+    }
+
+    public EnemyType GetEnemyType()
+    {
+        return enemyType;
     }
 }
