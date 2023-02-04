@@ -31,6 +31,8 @@ public class RootTrailTest : MonoBehaviour
     public Sprite oldRootSprite;
     public GameObject trailContainer;
 
+    private GameObject trailCollider;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -43,6 +45,8 @@ public class RootTrailTest : MonoBehaviour
         colliderGameObj.AddComponent<RootTrailCollider>();
         colliderGameObj.GetComponent<RootTrailCollider>().rootTrail = this;
         //colliderGameObj.tag = "PlayerTrail";
+
+        trailCollider = colliderGameObj;
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();

@@ -40,4 +40,12 @@ public class GameSessionManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R) && Debug.isDebugBuild)
+        {
+            OnRestartGame();
+        }
+    }
 }
