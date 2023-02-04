@@ -21,7 +21,7 @@ public class RootTrailTest : MonoBehaviour
     private float timePassed = 0f;
     public float timeBetweenPoints = 1f;
     public List<Vector2> manualPoints = new List<Vector2>();
-    public float reverseTimer = 0;
+    private float reverseTimer = 0;
 
     public bool moving = false;
     public bool maxReached = false;
@@ -208,7 +208,7 @@ public class RootTrailTest : MonoBehaviour
         }
     }
 
-    public void GrowBackToPosition(Vector2 position, GameObject other)
+    public void GrowBackToPosition(Vector2 position)
     {
         int nearestIndex = 0;
         float shortestDistance = 10000;
@@ -219,12 +219,6 @@ public class RootTrailTest : MonoBehaviour
                 shortestDistance = (position - point).magnitude;
                 nearestIndex = manualPoints.IndexOf(point);
             }
-        }
-
-        if(nearestIndex == manualPoints.Count-1)
-        {
-            Destroy(other);
-            MoveCenter();
         }
 
         for(int i = manualPoints.Count-1; i > 0; i--)
@@ -257,5 +251,15 @@ public class RootTrailTest : MonoBehaviour
                 EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
             }
         }
+
+        gameObject.GetComponent<CircleCollider2D>().enabled = false;
+        Invoke("TurnOnFrontCollider", 2f);
+        Debug.Log("Collider Off");
+    }
+
+    public void TurnOnFrontCollider()
+    {
+        gameObject.GetComponent<CircleCollider2D>().enabled = true;
+        Debug.Log("Collider Back On");
     }
 }
