@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class RootTrailCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger2D Hit, " + collision.gameObject.name);
+        //Debug.Log("Trigger2D Hit, " + collision.gameObject.name);
+
+        if (collision.CompareTag("Enemy"))
+        {
+            RootController.Instance.TrailCollidedWithEnemy(this.gameObject, collision);
+        }
     }
 }

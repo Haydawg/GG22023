@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class EnemyController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class EnemyController : MonoBehaviour
     private List<Transform> waypoints;
     private NavMeshAgent navMeshAgent;
     private int currentWaypointIndex;
+    private SpriteRenderer visuals;
+
+    public UnityEvent myEvent;
 
     private void Start()
     {
@@ -22,6 +26,8 @@ public class EnemyController : MonoBehaviour
 
         currentWaypointIndex = waypoints.Count;
         SetNextWaypoint();
+
+        visuals = GetComponentInChildren<SpriteRenderer>();
     }
 
     private void Update()
@@ -30,6 +36,8 @@ public class EnemyController : MonoBehaviour
         {
             SetNextWaypoint();
         }
+
+        visuals.flipX = navMeshAgent.velocity.x < 0;
     }
 
     private void SetNextWaypoint()
@@ -56,5 +64,21 @@ public class EnemyController : MonoBehaviour
 
         waypoints = new List<Transform>(childTransforms);
         waypoints.Remove(waypointsParent.transform);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //if (collision.tag == "Enemy")
+        //{
+        //    Debug.Log(collision.gameObject.name);
+        //    rootTrail.MoveCenter();
+        //    Destroy(collision.gameObject);
+        //}
+        Debug.Log("Collision");
+
+        if (collision.gameObject.CompareTag("PlayerTrail"))
+        {
+            Debug.Log("Player Trail collision");
+        }
     }
 }

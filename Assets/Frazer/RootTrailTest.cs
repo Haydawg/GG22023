@@ -38,6 +38,7 @@ public class RootTrailTest : MonoBehaviour
         colliderGameObj.AddComponent<Rigidbody2D>();
         colliderGameObj.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
         colliderGameObj.AddComponent<RootTrailCollider>();
+        colliderGameObj.tag = "PlayerTrail";
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
@@ -136,18 +137,7 @@ public class RootTrailTest : MonoBehaviour
         reverseTimer += Time.deltaTime;
         if (reverseTimer >= 0.05f)
         {
-            if (playerPos.Count > 0 && playerRot.Count > 0)
-            {
-                gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
-                playerPos.RemoveAt(playerPos.Count - 1);
-
-                gameObject.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
-                playerRot.RemoveAt(playerRot.Count - 1);
-
-                manualPoints.RemoveAt(manualPoints.Count - 1);
-                Destroy(spriteTrail[spriteTrail.Count - 1], 0);
-                spriteTrail.RemoveAt(spriteTrail.Count - 1);
-            }
+            GrowBack();
             reverseTimer = 0;
         }
     }
@@ -166,5 +156,33 @@ public class RootTrailTest : MonoBehaviour
         playerPos.Clear();
 
         manualPoints.Clear();
+    }
+
+    public void GrowBack(int times = 1)
+    {
+        for (int i = 0; i < times; i++)
+        {
+            if (playerPos.Count > 0 && playerRot.Count > 0)
+            {
+                gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
+                playerPos.RemoveAt(playerPos.Count - 1);
+
+                gameObject.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
+                playerRot.RemoveAt(playerRot.Count - 1);
+
+                manualPoints.RemoveAt(manualPoints.Count - 1);
+                Destroy(spriteTrail[spriteTrail.Count - 1], 0);
+                spriteTrail.RemoveAt(spriteTrail.Count - 1);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    public void GrowBackToPosition(Vector3 position)
+    {
+        // TODO: Find the closest position
     }
 }
