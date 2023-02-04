@@ -354,8 +354,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+      propertyPath: rootCont
+      value: 
+      objectReference: {fileID: 1611699643}
+    - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
       propertyPath: MaxTrailSegments
       value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528879182803926916, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+      propertyPath: timeBetweenPoints
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1528879182803926917, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7438205413410651723, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
       propertyPath: m_RootOrder
@@ -919,6 +931,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5164514390147240030, guid: 454779f19f63e3846ba75b02b8c29c55, type: 3}
   m_PrefabInstance: {fileID: 1501928735}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1611699643 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1528879182803926936, guid: b5f2d7ab69b5d0447a1f69f8d76aa8b7, type: 3}
+  m_PrefabInstance: {fileID: 545394701}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51702fd45d4305a47961c17962ec7dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1711408969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5164514390147240030, guid: 454779f19f63e3846ba75b02b8c29c55, type: 3}

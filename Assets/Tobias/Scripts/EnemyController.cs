@@ -65,6 +65,7 @@ public class EnemyController : MonoBehaviour
         waypoints.Remove(waypointsParent.transform);
     }
 
+    /**
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Collision");
@@ -74,6 +75,7 @@ public class EnemyController : MonoBehaviour
             Debug.Log("Player Trail collision");
         }
     }
+    **/
 
     public EnemyType GetEnemyType()
     {
