@@ -65,7 +65,7 @@ Transform:
   - {fileID: 9211134263805240008}
   - {fileID: 9211134262072394128}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3248324745934864420
 MonoBehaviour:
@@ -140,10 +140,6 @@ PrefabInstance:
       propertyPath: waypointsParent
       value: 
       objectReference: {fileID: 9211134262072394131}
-    - target: {fileID: 4335525522673541519, guid: d72304b40e67640439a170b6c313fa46, type: 3}
-      propertyPath: m_Speed
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d72304b40e67640439a170b6c313fa46, type: 3}
