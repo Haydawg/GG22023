@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8218642633587444007
 SpriteRenderer:
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 73d124bf77e463c45942d14136745d9f, type: 3}
+  m_Sprite: {fileID: 470049162, guid: a5f73e3a67f9fec49832cc53b65491ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -105,8 +105,10 @@ MonoBehaviour:
   speed: 1
   distBetweenPathNodes: 0
   rayAngle: 45
-  rayDist: 0.1
-  avoidenceWeight: 1
+  rayDist: 0.5
+  avoidenceWeight: 10
+  centrePlantPrefab: {fileID: 6350034637240834432, guid: d210c8d37bdcc7347bd01b0f71be2f9f, type: 3}
+  deadplant: {fileID: -1586855424, guid: a5f73e3a67f9fec49832cc53b65491ab, type: 3}
 --- !u!50 &8218642633587444025
 Rigidbody2D:
   serializedVersion: 4
@@ -140,16 +142,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3229b0dd66181b9429722472ec1cd903, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxTrailSegments: 50
   speed: 2
-  timeBetweenPoints: 0.1
+  distanceBetweenPoints: 0.5
   manualPoints: []
-  reverseTimer: 0
   moving: 0
   maxReached: 0
   spriteTrail: []
-  rootSprite: {fileID: 21300000, guid: 218b490abff1c794d9660bf03224490b, type: 3}
-  oldRootSprite: {fileID: 21300000, guid: 677549f5a8527fc4196cc3c5fc234c50, type: 3}
+  rootSprite: {fileID: -1230350077, guid: a5f73e3a67f9fec49832cc53b65491ab, type: 3}
+  oldRootSprite: {fileID: -1307087124, guid: a5f73e3a67f9fec49832cc53b65491ab, type: 3}
   trailContainer: {fileID: 0}
+  growthAudio: []
+  audioPlayer: {fileID: 0}
 --- !u!58 &8218642633587444027
 CircleCollider2D:
   m_ObjectHideFlags: 0
