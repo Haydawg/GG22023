@@ -79,6 +79,18 @@ public class HerbicideEnemy : MonoBehaviour
         Destroy(leftHerbicideCollider);
         Destroy(rightHerbicideCollider);
 
+        //leftTrail.startColor = new Color(leftTrail.startColor.r, leftTrail.startColor.g, leftTrail.startColor.b, 64);
+        //leftTrail.endColor = new Color(leftTrail.endColor.r, leftTrail.endColor.g, leftTrail.endColor.b, 64);
+
+        //rightTrail.startColor = new Color(rightTrail.startColor.r, rightTrail.startColor.g, rightTrail.startColor.b, 64);
+        //rightTrail.endColor = new Color(rightTrail.endColor.r, rightTrail.endColor.g, rightTrail.endColor.b, 64);
+
+        leftTrail.startColor = new Color(255, 255, 255, 0);
+        leftTrail.endColor = new Color(255, 255, 255, 0);
+
+        rightTrail.startColor = new Color(255, 255, 255, 0);
+        rightTrail.endColor = new Color(255, 255, 255, 0);
+
         isDead = true;
     }
 }
