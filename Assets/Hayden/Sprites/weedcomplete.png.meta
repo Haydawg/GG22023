@@ -1,0 +1,2612 @@
+fileFormatVersion: 2
+guid: a5f73e3a67f9fec49832cc53b65491ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: weedcomplete_0
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 697
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16966545999a3334bb66c8e4ec13b10a
+      internalID: 1508495901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 674
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc4a3b85f0fb3ec4296391e8d8fb6e74
+      internalID: -844253716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 653
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1abaac09e3f964ea141dc6952f83ce
+      internalID: 2085336789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 626
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6ab53d9e548ff4582d246479db2c36
+      internalID: 470049162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 626
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942ec570e18302c439c3ed878aa89125
+      internalID: -818948956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 626
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023efe70140ba744fab9a66a09c8b9ca
+      internalID: -1958038070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 626
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5002115b2c1dabd42a79fda30b225272
+      internalID: 163461745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_7
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 626
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b97a4bc2f124e4ab8d0f15002a1da7
+      internalID: 937589442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_8
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 626
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1e26ed831b8b045be1050e0f6fd885
+      internalID: -1073331653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_9
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 600
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b171e63007ca428dfae47691cf8f1
+      internalID: 1391614329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_10
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 600
+        width: 5
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912153cc556e52d4588f9f942527e147
+      internalID: -1230350077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_11
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 600
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a861082843cf60b4497942ed9f695239
+      internalID: 1402858459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_12
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 600
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf7b153b4bde9c40a9a64e618ca6480
+      internalID: -282746097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_13
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 600
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d69aafb5ef8d841b95ab3b40946af7
+      internalID: -119229140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_14
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 600
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656fff2bff532a2479ae83b0fbdda7a7
+      internalID: 1071468365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 575
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0aabb1288d1f84395ef13623823fd3
+      internalID: 2086040629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_16
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 575
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01fb5bd7fc7e10439199c4c64e0e855
+      internalID: 2044853833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_17
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 575
+        width: 5
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6250a3f202e26744dbf7c0355ffe30a4
+      internalID: 311308858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_18
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 575
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b41d055a651c7d419d2a4713238e2f3
+      internalID: -1040136808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_19
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 575
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f9e13ed4e2e764d8fff98232a1e5bd
+      internalID: -1884383180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_20
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 575
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc68bc00e4eb86c4793947828c802958
+      internalID: -758614767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_21
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 575
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdd0a7f48af4704e80e6d9a94e40c87
+      internalID: 23649614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_22
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 531
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f0c232564b16949a29b25b10075a40
+      internalID: 1754976396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_23
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 531
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51369916268140d4eba5acc2fd7211a1
+      internalID: 992114698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_24
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 531
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ebf94e7493a18449d1c030a9fa2f85
+      internalID: -1006774654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 531
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d1454bf55b60e48911702c8f57bb4d
+      internalID: -1159987314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_26
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 531
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21837a44e85babd47a2fc58780295375
+      internalID: -488560993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_27
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 531
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87c69e3f16f69543b5f1670cee3edc8
+      internalID: -970366337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_28
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 531
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf9404a8c08dec4baa6e596cc63221a
+      internalID: -906576305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_29
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 531
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6016755d6d33549897f9cc80031842
+      internalID: -932589681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_30
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 518
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd192d8a03190c4a8e28b00932ce21c
+      internalID: -1678723852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_31
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 533
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782cd582c47c9264ab7eb644b2a060d2
+      internalID: -897501066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_32
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 533
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fc9746cf4016e42826277c7f234940
+      internalID: -1576944720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_33
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 533
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6173276e841aadc45a3bbf75083f3b62
+      internalID: 1975344319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_34
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 533
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bdbe40aa537724abc0de0a1acd84d0
+      internalID: 307356124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_35
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 533
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e212db78daa5a244b02c40f44b80636
+      internalID: -418095226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_36
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 533
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1121ef7215f65304c801826c5fdef539
+      internalID: 868259877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_37
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 506
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37c757c4fb6d8c49be598850ce95d19
+      internalID: 1685353143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 506
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34b8be91ba0ec547bc7a93540079b5b
+      internalID: 1626555858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_39
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 506
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77efe3a4e6c2796409e68dd52c54b720
+      internalID: -1797849921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_40
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 506
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc29bd9d51aa2d4f984c05c3abb4a7b
+      internalID: 1807084590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_41
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 506
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01d27942af84ea4282657daa70c1403
+      internalID: -444352466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_42
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 506
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94bdda208549e124f91e739be96f1e12
+      internalID: -1586855424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_43
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 506
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d72a3b96db99e4f9ea3620e9c5e527
+      internalID: 1516666849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_44
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 506
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095e493dae21a04428eca02e3ee78998
+      internalID: -2009983277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_45
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 506
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c3e914402264047ac0a59a19215a33
+      internalID: 1118537503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_46
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 513
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923564a3dcc87b9479cc2ebfb35f6ff4
+      internalID: 1041139096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_47
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 507
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7338ef344bfe69428eda5fd0b4c3fb8
+      internalID: -2107564036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_48
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 517
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 883d26342c5843143bc5567ca286e5eb
+      internalID: -984480265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_49
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 507
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a78b414690ac9408c3b173cbabadf6
+      internalID: -1145258404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_50
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 517
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4119319c27cdce54ca63115d48d97686
+      internalID: -1420639570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_51
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 510
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b662ebd3b8c004db46f4c7b2fb0764
+      internalID: -605173682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_52
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 510
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cfbac2d0360be4cb41570cb3586ae5
+      internalID: -1205530060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_53
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 510
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb29dc670d1c0e343a35661228cbc1c3
+      internalID: 1780733122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_54
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 507
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66c1491638f3f746bd33981801ec12e
+      internalID: 50495724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_55
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 489
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e2e395a0c42044289b3d73432bd147
+      internalID: -1839547069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_56
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 481
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fc59506ee4bc148ad8be52c52246d5
+      internalID: 976331338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_57
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 478
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566313fc91e71c34badfe67eaa1e1776
+      internalID: 934540669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_58
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 478
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7af65c40cbec44391bfff1e130b550
+      internalID: 1342552700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_59
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 478
+        width: 5
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09896949808ca6640a0c307afb2e3960
+      internalID: -1144467641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_60
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 478
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592cbc6add0268f4285755673dbadcb9
+      internalID: 534556565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_61
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 478
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418cefa672fe37d4abf053efddc26eb6
+      internalID: 1477978500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_62
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 478
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fb7f449cdcaae4394b7173846ab96e
+      internalID: -1841379422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_63
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 478
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845cb5ab1e859fc419867a4be0533a74
+      internalID: 1428483674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_64
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 454
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61853b9c1ce6dfe4bb888c7ec23a3be6
+      internalID: 391672164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_65
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 446
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd83b974f505a04caa9b9aebd6e9499
+      internalID: 1569817815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_66
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 446
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227803e2e45d61c4aa1f209fa96fca1a
+      internalID: -1307087124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_67
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 446
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178dc7246a6ed9b4f8fd6c2ef780de82
+      internalID: -572050193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_68
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 446
+        width: 6
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fce56992c07bba438c7cd5f4d737ad7
+      internalID: -1344884387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_69
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 446
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c825d1643998e78468c782e61b8a1ff6
+      internalID: 1706269360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_70
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 446
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fea2a5d7bcac948b906fe13951095f
+      internalID: -928508629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_71
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 412
+        width: 4
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc86535b1707b14a934dd2c00f7bf0a
+      internalID: -989513857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_72
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 405
+        width: 5
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006c8e0ae90099942a1c3937708e4abd
+      internalID: -1301772205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_73
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 412
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4da42275726a44e904857c8889498e
+      internalID: -2074323001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_74
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 412
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3886a1b8e617d4bba931096581d29b
+      internalID: 1672109673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_75
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 412
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab6ed9550e158e4c9f1c20bfebe759b
+      internalID: 1888399628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_76
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 412
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78380929abffa9749835fe9791b8a00f
+      internalID: -1777130483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_77
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 197
+        width: 108
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616e023fac6846d42b0a97adf4ca0685
+      internalID: -897734479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_78
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 251
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2418d127e3e19cd408af929abefeae27
+      internalID: 1199588463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_79
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 226
+        width: 38
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7908fb29b67dc4da3bd0b83bcba1ce
+      internalID: -2084273106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_80
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 251
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e6bc8da21461342b0f81c71e9f128e
+      internalID: 1758999360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_81
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 251
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b770fe67174a94aa2eff36a59026b7
+      internalID: 1895696906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_82
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 251
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f11a1acb8bb184aabcf1121b32925d
+      internalID: 1236794967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_83
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 251
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dccb23fc02fc84f8eb1731336e3b6f
+      internalID: 1467323725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_84
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 251
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd724ddaa0d40994bb28068c3d873b27
+      internalID: -879757310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_85
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 251
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f7e30c092212f41b26b800668ecc10
+      internalID: -348137979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_86
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 251
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc1dfacf65a1c1f44a8ef1121fdbc3c2
+      internalID: -2089566436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_87
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 251
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41d409072af968408516ace6ea20770
+      internalID: 1159567263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_88
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 251
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676b494d17da2094995f766d191afa2c
+      internalID: 1060017923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_89
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 251
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244b1d3881e3dea42800b86e2c07630f
+      internalID: 1504976954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_90
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 251
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d303b079450756a4a89816648f55f073
+      internalID: -423514497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_91
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 251
+        width: 30
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd89c79e72d136540bc40dd1ec89b750
+      internalID: -182359546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_92
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 251
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f05c4c1173691d4e8e7352dc4dc62b4
+      internalID: 1164482987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_93
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 251
+        width: 32
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bc194943bd2d145a7a5b885b5f7706
+      internalID: -1310039801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_94
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 251
+        width: 28
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd4f9ff4673cae4493e9e52d8ae5f89
+      internalID: -443880122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_95
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 251
+        width: 30
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68335f4962f7ba49b4c4083ccc5a279
+      internalID: 585481843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_96
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 211
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede6b795cfb46474d91c1de561837221
+      internalID: -352318795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_97
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 197
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e591ef8b25207a14eb585eed3b525573
+      internalID: -1331810239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_98
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 197
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923c6e375e36b99469b3df42d16ede0d
+      internalID: 1442655731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_99
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 197
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98afb0a5b75a094bb24ab6b6dbe234e
+      internalID: -1366958634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_100
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 197
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbd363f06942b64bb4be3e135e4c022
+      internalID: -1065663985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_101
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 197
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c14dc0def65e448ad5619b128c4d0f
+      internalID: 1562500200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_102
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 197
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6579e7c2907e084bb5defca4b68dda6
+      internalID: -939782403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_103
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 197
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcf0a4fbbd457641bc19238fad1931a
+      internalID: 141665122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_104
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 197
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621f8b15fd6ebbb44835e2ccb850a80b
+      internalID: -1261830354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_105
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 197
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752278f85d55f9243b84416957a8c8c7
+      internalID: 1009141348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_106
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 197
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7972bc20ff082a140b17fcb9d0fae478
+      internalID: -480754455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_107
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 197
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c13bbf76b9ec794a8240982f2ff75e8
+      internalID: -1427191198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_108
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 194
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63734787bf92c64459389d22de0658ec
+      internalID: -1992755607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_109
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 197
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe5e9b9116122941ba39384a09cf2de
+      internalID: 860379415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_110
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 197
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5e2e3edea3cdd4486f11aeccff0332
+      internalID: -1835688695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weedcomplete_111
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 197
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4698f0e435c393c4cbf60c9c0f3f8e99
+      internalID: 507998219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      weedcomplete_24: -1006774654
+      weedcomplete_8: -1073331653
+      weedcomplete_72: -1301772205
+      weedcomplete_69: 1706269360
+      weedcomplete_7: 937589442
+      weedcomplete_27: -970366337
+      weedcomplete_106: -480754455
+      weedcomplete_90: -423514497
+      weedcomplete_1: -844253716
+      weedcomplete_88: 1060017923
+      weedcomplete_17: 311308858
+      weedcomplete_104: -1261830354
+      weedcomplete_50: -1420639570
+      weedcomplete_87: 1159567263
+      weedcomplete_96: -352318795
+      weedcomplete_33: 1975344319
+      weedcomplete_65: 1569817815
+      weedcomplete_30: -1678723852
+      weedcomplete_36: 868259877
+      weedcomplete_58: 1342552700
+      weedcomplete_74: 1672109673
+      weedcomplete_48: -984480265
+      weedcomplete_56: 976331338
+      weedcomplete_46: 1041139096
+      weedcomplete_60: 534556565
+      weedcomplete_68: -1344884387
+      weedcomplete_84: -879757310
+      weedcomplete_52: -1205530060
+      weedcomplete_71: -989513857
+      weedcomplete_93: -1310039801
+      weedcomplete_0: 1508495901
+      weedcomplete_47: -2107564036
+      weedcomplete_103: 141665122
+      weedcomplete_77: -897734479
+      weedcomplete_6: 163461745
+      weedcomplete_16: 2044853833
+      weedcomplete_75: 1888399628
+      weedcomplete_3: 470049162
+      weedcomplete_21: 23649614
+      weedcomplete_61: 1477978500
+      weedcomplete_100: -1065663985
+      weedcomplete_76: -1777130483
+      weedcomplete_12: -282746097
+      weedcomplete_55: -1839547069
+      weedcomplete_20: -758614767
+      weedcomplete_95: 585481843
+      weedcomplete_64: 391672164
+      weedcomplete_53: 1780733122
+      weedcomplete_80: 1758999360
+      weedcomplete_54: 50495724
+      weedcomplete_108: -1992755607
+      weedcomplete_32: -1576944720
+      weedcomplete_26: -488560993
+      weedcomplete_89: 1504976954
+      weedcomplete_91: -182359546
+      weedcomplete_97: -1331810239
+      weedcomplete_101: 1562500200
+      weedcomplete_57: 934540669
+      weedcomplete_92: 1164482987
+      weedcomplete_18: -1040136808
+      weedcomplete_94: -443880122
+      weedcomplete_43: 1516666849
+      weedcomplete_45: 1118537503
+      weedcomplete_78: 1199588463
+      weedcomplete_59: -1144467641
+      weedcomplete_105: 1009141348
+      weedcomplete_62: -1841379422
+      weedcomplete_111: 507998219
+      weedcomplete_9: 1391614329
+      weedcomplete_10: -1230350077
+      weedcomplete_73: -2074323001
+      weedcomplete_49: -1145258404
+      weedcomplete_83: 1467323725
+      weedcomplete_29: -932589681
+      weedcomplete_41: -444352466
+      weedcomplete_81: 1895696906
+      weedcomplete_70: -928508629
+      weedcomplete_66: -1307087124
+      weedcomplete_98: 1442655731
+      weedcomplete_4: -818948956
+      weedcomplete_38: 1626555858
+      weedcomplete_25: -1159987314
+      weedcomplete_63: 1428483674
+      weedcomplete_2: 2085336789
+      weedcomplete_86: -2089566436
+      weedcomplete_28: -906576305
+      weedcomplete_51: -605173682
+      weedcomplete_22: 1754976396
+      weedcomplete_35: -418095226
+      weedcomplete_99: -1366958634
+      weedcomplete_5: -1958038070
+      weedcomplete_31: -897501066
+      weedcomplete_14: 1071468365
+      weedcomplete_39: -1797849921
+      weedcomplete_13: -119229140
+      weedcomplete_34: 307356124
+      weedcomplete_11: 1402858459
+      weedcomplete_82: 1236794967
+      weedcomplete_23: 992114698
+      weedcomplete_40: 1807084590
+      weedcomplete_44: -2009983277
+      weedcomplete_107: -1427191198
+      weedcomplete_15: 2086040629
+      weedcomplete_67: -572050193
+      weedcomplete_102: -939782403
+      weedcomplete_37: 1685353143
+      weedcomplete_19: -1884383180
+      weedcomplete_42: -1586855424
+      weedcomplete_85: -348137979
+      weedcomplete_79: -2084273106
+      weedcomplete_109: 860379415
+      weedcomplete_110: -1835688695
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

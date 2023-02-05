@@ -15,6 +15,8 @@ public class EnemyController : MonoBehaviour
     private int currentWaypointIndex;
     private SpriteRenderer visuals;
 
+    [SerializeField] private Animator anim;
+
     private void Start()
     {
         SetupWaypoints();
@@ -37,6 +39,16 @@ public class EnemyController : MonoBehaviour
         }
 
         visuals.flipX = navMeshAgent.velocity.x < 0;
+        if(navMeshAgent.isStopped)
+        {
+            anim.SetBool("Is Idle", true);
+        }
+        else
+        {
+            anim.SetBool("Is Idle", false);
+        }
+        anim.SetFloat("Y Move", navMeshAgent.velocity.normalized.y);
+        anim.SetFloat("X Move", navMeshAgent.velocity.normalized.x);
     }
 
     private void SetNextWaypoint()

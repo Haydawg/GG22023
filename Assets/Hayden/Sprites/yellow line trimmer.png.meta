@@ -1,0 +1,1776 @@
+fileFormatVersion: 2
+guid: 1ee80adcd34068d4e83ed3206eea613a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yellow line trimmer_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 709
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5610055c559353e48a4f2241bda2aecc
+      internalID: 2065221767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 707
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaeec89bf6bcd34e9c9f8a48c0e209d
+      internalID: -1847229368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_2
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 707
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749e2b03a2936f94f9f33b68b97e3c00
+      internalID: 41653857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 707
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dc8c4dc97ae8746a0c490f7de1179c
+      internalID: 501638776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_4
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 707
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b436b9ed15655f4e9e78fcf1048aaa4
+      internalID: -21541297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 707
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be97f333039b5640965735de1ec3f60
+      internalID: -569601076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_6
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 707
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c1b8da971c16847b94fac084f247f6
+      internalID: 1451367383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_7
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 707
+        width: 24
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42d17c999e48cf42a56a7e0a14bc93b
+      internalID: 1257667331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_8
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92a75d614982ae14c8ba6fcc16bd65c6
+      internalID: -1165848084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0572fcc99013747b269850530e535b
+      internalID: 1250674833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4083f66a846846842b23e29b2575c124
+      internalID: 1657887924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_11
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f1701bdded4e7409329fdb45779992
+      internalID: 106659595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_12
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b3149e8d655654b9f0a3b60c221c1a
+      internalID: 390687825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 645
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737c4b106f7d5434485cf07091c193af
+      internalID: 2134607968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_14
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a38687ae7da912439f1dd031641fa63
+      internalID: -1152052833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_15
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 645
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e84a76fed3744743bfa017aae78f485
+      internalID: -1443698498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 581
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5960954719414254ab0b06339f5ff7fd
+      internalID: 2071835915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_17
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 582
+        width: 29
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e16fa189b6d08741a73a2e38983e7be
+      internalID: 2001593437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_18
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 582
+        width: 23
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d8b9770bd0e694db0969acd98c420e
+      internalID: 46093809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 582
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d1d55405277774392e775d36e844a3
+      internalID: 85875221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_20
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 582
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9766cbff3334b49b113ae6d5c4766e
+      internalID: 1853572590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 580
+        width: 23
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1ea260bd511c54d9a38ae3a5eb2969
+      internalID: -94298911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_22
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 582
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03b27df4734805746b8baaf4de88d390
+      internalID: 1513420708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_23
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 582
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf4cb856c538e94981abc531ae88b87
+      internalID: 648215681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027fa5fe2ededce4788a65958f2bdfe2
+      internalID: 1926215489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_25
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64e676a475ed6543889af65ef21cfda
+      internalID: -1408910191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_26
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e49a649dbe0e84992637a522493b8c
+      internalID: -170068204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_27
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85178de836f66c648842d36332930f80
+      internalID: -1839722296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_28
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f96a24a55790444a9239ecfcccb343a
+      internalID: -1895409741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_29
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 517
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f72ce729163d994e9f6c82fcdbeeb26
+      internalID: -867467075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_30
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea287175ae1bc13478dc2b813c1ac44f
+      internalID: 1850782796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 517
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05ca9cef48743b45a06ed7ba1f2179d
+      internalID: -1871089254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_32
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 453
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5433baabb0c694478f95d9959001ffb
+      internalID: -1860438913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_33
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 454
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beb102a6aa8ac241a74ff908ac4b244
+      internalID: 1403755780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_34
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 453
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6f208bdbec15e42a9b1152ed851183
+      internalID: 744634828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_35
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 452
+        width: 34
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410511e9a4a251c44a0be8c087bc529f
+      internalID: 1989361490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_36
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 453
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2608f396f33cd8946a8be0aa3f3e21ac
+      internalID: -1575270776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_37
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 454
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c0a890ddde8f943941df3a396975bd
+      internalID: -1997336294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_38
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 453
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eec7baf819432d41b5a935e73856371
+      internalID: -726462857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_39
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 452
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81521d44587cce64c930e6e028351492
+      internalID: -1592076093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_40
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 453
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82808fbbc0015f43ad36bc45d25ebe0
+      internalID: 1785744080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_41
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 389
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bf5425e62d93f4cb8a698e38854b08
+      internalID: 1455393562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_42
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 389
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fc10ff966787344837e8a1a54f3c2c
+      internalID: 594456203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_43
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 390
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97f351edf18f3f48bee104fe7fb9334
+      internalID: -477397919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_44
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 390
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81de350f4981af44c8c9c3636c0c7e78
+      internalID: -1108357450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_45
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 389
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099d67ae42d9eb14c8136007b7ca8fc7
+      internalID: -80324045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_46
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 389
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb217ff0fea0074dbaf122dc86eaf00
+      internalID: -1781948059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_47
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 389
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008aff9edecec6749bd09b9fd6772e52
+      internalID: -1084950755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_48
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 389
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5daa1c29a028ea04fa867cd1cb209a3b
+      internalID: 530013516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_49
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 389
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244deb99647d84945b1deb265481d962
+      internalID: 478362048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_50
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 325
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bf400a99e294b429ba44bcc321b676
+      internalID: -121619171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_51
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 325
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df61db8a34fbde488ff0f45e0f7f45a
+      internalID: -1239488097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_52
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 324
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821b22798538f3f4f95ba6cb54a81269
+      internalID: 1559249030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_53
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 324
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8837e93dac3e5624298be62b0e6e52f8
+      internalID: 1466651368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_54
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 324
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe879ae82f17774ea48ea33ca11a836
+      internalID: -1054675759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_55
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 325
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8a553c91db51b4e907361c98de2f73
+      internalID: -740174676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_56
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 324
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7cb227ac857e64196c746978b449ee
+      internalID: -1123443781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_57
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 324
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8989f44b0edff45903743e5a6d4222
+      internalID: -379983630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_58
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 324
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9908e40659dfdef46b5ea3eb4c89df23
+      internalID: 1057447210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_59
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 261
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c8f59d770cdff47bfe4f7b0c19a2b7
+      internalID: -1715977805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_60
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 261
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a701ae4094ffe448622fc3568d219d
+      internalID: 1502202597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_61
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 262
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36f80653f729bd468dbc3b4eea89bf2
+      internalID: 1866433084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_62
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 262
+        width: 39
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2a3e513e10c6a43a6ffdb54097aa26
+      internalID: 1612245255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_63
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 261
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851c1e4df709f814eba62041e1122d23
+      internalID: -1245108033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_64
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 261
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b43049d1c5ff5b41bfb0aa1cc3b0e48
+      internalID: 1582008641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_65
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 261
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cabfb3edbe64e94a96c6d7f7674c55f
+      internalID: -1858340923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_66
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 261
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856d9e9216049054b8923c7e416e8cc4
+      internalID: -1852311582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_67
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 261
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dccff46aac84364588ee7297df09eba
+      internalID: 38100916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_68
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 190
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c355817856e5f604c933e87a92db60f5
+      internalID: -1719442660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_69
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 190
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b1f1f4de6e1234cad62b266017ba4c
+      internalID: 283233032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_70
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 190
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6350fdee336d5e547a1fcd60f201eaa0
+      internalID: 360711833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_71
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 191
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898f87ce31745e0478a0ab87457ca196
+      internalID: 831834332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_72
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 191
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fed17f3870fad14da9fb1771b166762
+      internalID: 1277179721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow line trimmer_73
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 188
+        width: 34
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a17d3b904b38ba4eb034ef046c5098e
+      internalID: -4628923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      yellow line trimmer_33: 1403755780
+      yellow line trimmer_9: 1250674833
+      yellow line trimmer_6: 1451367383
+      yellow line trimmer_71: 831834332
+      yellow line trimmer_18: 46093809
+      yellow line trimmer_21: -94298911
+      yellow line trimmer_44: -1108357450
+      yellow line trimmer_4: -21541297
+      yellow line trimmer_52: 1559249030
+      yellow line trimmer_37: -1997336294
+      yellow line trimmer_39: -1592076093
+      yellow line trimmer_63: -1245108033
+      yellow line trimmer_60: 1502202597
+      yellow line trimmer_69: 283233032
+      yellow line trimmer_0: 2065221767
+      yellow line trimmer_41: 1455393562
+      yellow line trimmer_28: -1895409741
+      yellow line trimmer_11: 106659595
+      yellow line trimmer_17: 2001593437
+      yellow line trimmer_32: -1860438913
+      yellow line trimmer_30: 1850782796
+      yellow line trimmer_15: -1443698498
+      yellow line trimmer_2: 41653857
+      yellow line trimmer_10: 1657887924
+      yellow line trimmer_34: 744634828
+      yellow line trimmer_48: 530013516
+      yellow line trimmer_43: -477397919
+      yellow line trimmer_73: -4628923
+      yellow line trimmer_59: -1715977805
+      yellow line trimmer_58: 1057447210
+      yellow line trimmer_55: -740174676
+      yellow line trimmer_62: 1612245255
+      yellow line trimmer_42: 594456203
+      yellow line trimmer_57: -379983630
+      yellow line trimmer_64: 1582008641
+      yellow line trimmer_23: 648215681
+      yellow line trimmer_61: 1866433084
+      yellow line trimmer_72: 1277179721
+      yellow line trimmer_53: 1466651368
+      yellow line trimmer_35: 1989361490
+      yellow line trimmer_16: 2071835915
+      yellow line trimmer_1: -1847229368
+      yellow line trimmer_5: -569601076
+      yellow line trimmer_22: 1513420708
+      yellow line trimmer_7: 1257667331
+      yellow line trimmer_67: 38100916
+      yellow line trimmer_36: -1575270776
+      yellow line trimmer_20: 1853572590
+      yellow line trimmer_66: -1852311582
+      yellow line trimmer_40: 1785744080
+      yellow line trimmer_50: -121619171
+      yellow line trimmer_12: 390687825
+      yellow line trimmer_54: -1054675759
+      yellow line trimmer_65: -1858340923
+      yellow line trimmer_27: -1839722296
+      yellow line trimmer_29: -867467075
+      yellow line trimmer_49: 478362048
+      yellow line trimmer_51: -1239488097
+      yellow line trimmer_26: -170068204
+      yellow line trimmer_25: -1408910191
+      yellow line trimmer_46: -1781948059
+      yellow line trimmer_56: -1123443781
+      yellow line trimmer_8: -1165848084
+      yellow line trimmer_13: 2134607968
+      yellow line trimmer_38: -726462857
+      yellow line trimmer_47: -1084950755
+      yellow line trimmer_45: -80324045
+      yellow line trimmer_14: -1152052833
+      yellow line trimmer_31: -1871089254
+      yellow line trimmer_68: -1719442660
+      yellow line trimmer_24: 1926215489
+      yellow line trimmer_19: 85875221
+      yellow line trimmer_70: 360711833
+      yellow line trimmer_3: 501638776
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
