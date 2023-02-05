@@ -33,7 +33,7 @@ public class RootTrailTest : MonoBehaviour
     private GameObject trailCollider;
 
     public List<AudioClip> growthAudio = new List<AudioClip>();
-    AudioSource audioPlayer;
+    public AudioSource audioPlayer;
 
     // Start is called before the first frame update
     void Awake()
@@ -51,10 +51,6 @@ public class RootTrailTest : MonoBehaviour
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
-
-        audioPlayer = gameObject.AddComponent<AudioSource>();
-        audioPlayer.loop = false;
-        audioPlayer.playOnAwake = false;
     }
 
     private void Start()
