@@ -680,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuSceneManager
       objectReference: {fileID: 0}
+    - target: {fileID: 4370607622106415303, guid: 2fd0e8af7fa8ca84db7dbdec661acc86, type: 3}
+      propertyPath: gameScene
+      value: MainLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 4370607622106415320, guid: 2fd0e8af7fa8ca84db7dbdec661acc86, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -903,7 +907,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Made by:
 
-    Frayer Cowan
+    Frazer Cowan
 
     Tobias Heiles
 
