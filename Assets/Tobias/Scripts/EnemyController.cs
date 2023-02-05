@@ -110,9 +110,11 @@ public class EnemyController : MonoBehaviour
     public void Kill()
     {
         isDying = true;
-        visuals.color = Color.red;
+        anim.SetBool("Is Dead", true);
+        anim.SetTrigger("Die");
+        //visuals.color = Color.red;
         enemyCollider.enabled = false;
         navMeshAgent.enabled = false;
-        Destroy(gameObject, 1.25f);
+        //Destroy(gameObject, 1.25f);
     }
 }

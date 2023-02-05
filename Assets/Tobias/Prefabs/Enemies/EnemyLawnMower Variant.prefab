@@ -8,21 +8,25 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 251065462426148601, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 999d2bdd20a1a2145abb01708de3ec24, type: 2}
     - target: {fileID: 9211134263191146368, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_Name
       value: EnemyLawnMower Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.7666826
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2964187
       objectReference: {fileID: 0}
     - target: {fileID: 9211134263191146369, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60,10 +64,14 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9211134264049822236, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.72
+      objectReference: {fileID: 0}
     - target: {fileID: 9211134264049822237, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 626629ea5dada1c40b2382939e064b90, type: 3}
+      objectReference: {fileID: 1551874832, guid: 59cb814f8f0b4b94895e7f2a9c4d00b7, type: 3}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}

@@ -108,7 +108,7 @@ public class RootTrailTest : MonoBehaviour
         newPoint.transform.parent = trailContainer.transform;
         newPoint.transform.position = (Vector3)playerPos[playerPos.Count - 1];
         newPoint.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
-        newPoint.transform.localScale = new Vector3(8, 8, 8);
+        newPoint.transform.localScale = new Vector3(1, 1, 1);
         SpriteRenderer sprite = newPoint.AddComponent<SpriteRenderer>();
         newPoint.GetComponent<SpriteRenderer>().sprite = rootSprite;
         sprite.sortingOrder = 5;
@@ -163,6 +163,7 @@ public class RootTrailTest : MonoBehaviour
         manualPoints.Clear();
 
         CreatenewPoint();
+        RootController.Instance.MoveCenter();
 
         // Move camera
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);

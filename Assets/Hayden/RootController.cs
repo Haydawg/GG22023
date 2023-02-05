@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class RootController : MonoBehaviour
@@ -29,7 +30,10 @@ public class RootController : MonoBehaviour
 
     List<Vector3> rayVectors;
     bool disableControlsOnReachingExit;
+    [SerializeField] GameObject centrePlantPrefab;
 
+    SpriteRenderer currentplant;
+    [SerializeField] Sprite deadplant;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -51,6 +55,8 @@ public class RootController : MonoBehaviour
         rayVectors.Add(Quaternion.AngleAxis(rayAngle, Vector3.up) * (Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Quaternion.AngleAxis(-rayAngle, Vector3.up) * (-Vector3.right + Vector3.up) * rayDist);
         rayVectors.Add(Vector3.up * rayDist);
+        GameObject plant = Instantiate(centrePlantPrefab, transform.position, Quaternion.identity);
+        currentplant = plant.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -177,5 +183,12 @@ public class RootController : MonoBehaviour
         Debug.Log("Trail collision");
         //rootTrail.GrowBack(20);
         rootTrail.GrowBackToPosition(collision.transform.position);
+    }
+
+    public void MoveCenter()
+    {
+        currentplant.sprite = deadplant;
+        GameObject newPlant = Instantiate(centrePlantPrefab, transform.position, Quaternion.identity);
+        currentplant = newPlant.GetComponentInChildren<SpriteRenderer>();
     }
 }
