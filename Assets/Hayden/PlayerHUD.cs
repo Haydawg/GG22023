@@ -19,7 +19,9 @@ public class PlayerHUD : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateLives(3);
+        //UpdateLives(3);
+
+        // Called from GameSessionManager/UIManager
     }
 
     // Update is called once per frame

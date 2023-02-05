@@ -136,11 +136,15 @@ public class RootController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.CompareTag("Enemy"))
         {
             Debug.Log(collision.gameObject.name);
             rootTrail.MoveCenter();
             Destroy(collision.gameObject);
+        }
+        else if (collision.CompareTag("Herbicides"))
+        {
+            Debug.Log("Root collided with Herbicides");
         }
         else if (collision.CompareTag("Exit"))
         {

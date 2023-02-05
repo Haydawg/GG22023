@@ -15,11 +15,10 @@ public class RootTrailTest : MonoBehaviour
 
     static List<EdgeCollider2D> unusedColliders = new List<EdgeCollider2D>();
 
-    private ArrayList playerPos;
+    public ArrayList playerPos;
     private ArrayList playerRot;
 
-    private float timePassed = 0f;
-    public float timeBetweenPoints = 1f;
+    public float distanceBetweenPoints = 2;
     public List<Vector2> manualPoints = new List<Vector2>();
     private float reverseTimer = 0;
 
@@ -33,10 +32,12 @@ public class RootTrailTest : MonoBehaviour
 
     private GameObject trailCollider;
 
+    public List<AudioClip> growthAudio = new List<AudioClip>();
+    AudioSource audioPlayer;
+
     // Start is called before the first frame update
     void Awake()
     {
-        trail = this.GetComponent<TrailRenderer>();
         GameObject colliderGameObj = new GameObject("TrailCollider", typeof(EdgeCollider2D));
         edgeColl = colliderGameObj.GetComponent<EdgeCollider2D>();
         edgeColl.isTrigger = true;
@@ -50,90 +51,68 @@ public class RootTrailTest : MonoBehaviour
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
+
+        audioPlayer = gameObject.AddComponent<AudioSource>();
+        audioPlayer.loop = false;
+        audioPlayer.playOnAwake = false;
     }
 
     private void Start()
     {
+        CreatenewPoint();
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (maxReached == false)
+        Vector2 playerPointDistance = ((new Vector2(gameObject.transform.position.x, gameObject.transform.position.y)) - manualPoints[manualPoints.Count-1]);
+        if (playerPointDistance.magnitude > distanceBetweenPoints)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (manualPoints.Count < MaxTrailSegments)
             {
-                Vector3 forVec = gameObject.transform.up * speed;
-                gameObject.transform.position = gameObject.transform.position + forVec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                Vector3 rightvec = gameObject.transform.right * speed;
-                gameObject.transform.position = gameObject.transform.position + rightvec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                Vector3 downVec = gameObject.transform.up * -1 * speed;
-                gameObject.transform.position = gameObject.transform.position + downVec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                Vector3 leftVec = gameObject.transform.right * -1 * speed;
-                gameObject.transform.position = gameObject.transform.position + leftVec;
-                moving = true;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            ReverseGrowth();
-        }
-        else
-        {
-            timePassed = timePassed + Time.deltaTime;
-            if (timePassed >= timeBetweenPoints)
-            {
-                if (manualPoints.Count < MaxTrailSegments)
+                SetMaxReached(false);
+                if (moving == true)
                 {
-                    SetMaxReached(false);
-                    if (moving == true)
-                    {
-                        manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
-                        playerPos.Add(gameObject.transform.position);
-                        playerRot.Add(gameObject.transform.localEulerAngles);
-
-                        GameObject newPoint = new GameObject();
-                        newPoint.transform.parent = trailContainer.transform;
-                        newPoint.transform.position = (Vector3)playerPos[playerPos.Count -1];
-                        newPoint.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
-                        newPoint.transform.localScale = new Vector3(8,8,8);
-                        SpriteRenderer sprite = newPoint.AddComponent<SpriteRenderer>();
-                        newPoint.GetComponent<SpriteRenderer>().sprite = rootSprite;
-                        sprite.sortingOrder = 5;
-                        spriteTrail.Add(newPoint);
-
-                        timePassed = 0f;
-                    }
-                }
-                else
-                {
-                    SetMaxReached(true);
+                   CreatenewPoint();
                 }
             }
-        }
-
-        if(Input.GetKey(KeyCode.E))
-        {
-            MoveCenter();
+            else
+            {
+                SetMaxReached(true);
+            }
         }
 
         SetColliderTrail(manualPoints, edgeColl);
 
+        if(moving == true)
+        {
+            if (audioPlayer.isPlaying == false)
+            {
+                int audioClipNum = Random.Range(0, growthAudio.Count - 1);
+                audioPlayer.clip = growthAudio[audioClipNum];
+                audioPlayer.Play();
+            }
+        }
+
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
+    }
+
+    public void CreatenewPoint()
+    {
+        manualPoints.Add(new Vector2(gameObject.transform.position.x, gameObject.transform.position.y));
+        playerPos.Add(gameObject.transform.position);
+        playerRot.Add(gameObject.transform.localEulerAngles);
+
+        GameObject newPoint = new GameObject();
+        newPoint.transform.parent = trailContainer.transform;
+        newPoint.transform.position = (Vector3)playerPos[playerPos.Count - 1];
+        newPoint.transform.localEulerAngles = (Vector3)playerRot[playerRot.Count - 1];
+        newPoint.transform.localScale = new Vector3(8, 8, 8);
+        SpriteRenderer sprite = newPoint.AddComponent<SpriteRenderer>();
+        newPoint.GetComponent<SpriteRenderer>().sprite = rootSprite;
+        sprite.sortingOrder = 5;
+        spriteTrail.Add(newPoint);
     }
 
     private void SetColliderTrail(List<Vector2> trail, EdgeCollider2D collider)
@@ -161,7 +140,7 @@ public class RootTrailTest : MonoBehaviour
     public void ReverseGrowth()
     {
         reverseTimer += Time.deltaTime;
-        if (reverseTimer >= 0.05f)
+        if (reverseTimer >= 0.1f)
         {
             GrowBack();
             reverseTimer = 0;
@@ -183,6 +162,8 @@ public class RootTrailTest : MonoBehaviour
 
         manualPoints.Clear();
 
+        CreatenewPoint();
+
         // Move camera
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
@@ -191,7 +172,7 @@ public class RootTrailTest : MonoBehaviour
     {
         for (int i = 0; i < times; i++)
         {
-            if (playerPos.Count > 0 && playerRot.Count > 0)
+            if (playerPos.Count > 1 && playerRot.Count > 1)
             {
                 gameObject.transform.position = (Vector3)playerPos[playerPos.Count - 1];
                 playerPos.RemoveAt(playerPos.Count - 1);
@@ -202,6 +183,10 @@ public class RootTrailTest : MonoBehaviour
                 manualPoints.RemoveAt(manualPoints.Count - 1);
                 Destroy(spriteTrail[spriteTrail.Count - 1], 0);
                 spriteTrail.RemoveAt(spriteTrail.Count - 1);
+
+                
+                //Move Camera
+                EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
             }
             else
             {

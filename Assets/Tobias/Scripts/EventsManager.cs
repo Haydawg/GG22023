@@ -10,8 +10,10 @@ public class EventsManager : MonoBehaviour
     public UpdateRemainingLives UpdateRemainingLivesEvent;
 
     public UnityAction TailCollidedWithEnemy;
+    public UnityAction TailCollidedWithHerbicides;
     public UnityAction PlayerHasLostAllLives;
     public UnityAction RestartGame;
+    public UnityAction QuitGame;
     public UnityAction PlayerReachedExit;
     public UnityAction WindDamage;
 

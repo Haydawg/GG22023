@@ -89,6 +89,11 @@ public class EnemyController : MonoBehaviour
     }
     **/
 
+    public Transform GetWaypoint()
+    {
+        return waypoints[currentWaypointIndex];
+    }
+
     public EnemyType GetEnemyType()
     {
         return enemyType;

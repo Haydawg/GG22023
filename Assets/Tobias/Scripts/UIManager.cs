@@ -38,11 +38,18 @@ public class UIManager : MonoBehaviour
 
     private void ShowGameOverUI()
     {
+        playerHUD.gameObject.SetActive(false);
         gameOverUI.SetActive(true);
     }
 
     private void OnPlayerReachedExit()
     {
+        playerHUD.gameObject.SetActive(false);
         gameWonUI.SetActive(true);
+    }
+
+    public void SetupPlayerLives(int lives)
+    {
+        playerHUD.UpdateLives(lives);
     }
 }

@@ -10,6 +10,9 @@ public class HerbicideEnemy : MonoBehaviour
     public TrailRenderer rightTrail;
     EdgeCollider2D leftEdgeColl;
     EdgeCollider2D rightEdgeColl;
+    public GameObject trailContainer;
+    public EnemyController enemyCont;
+    private Transform waypoint;
 
     // Start is called before the first frame update
     void Start()
@@ -18,18 +21,29 @@ public class HerbicideEnemy : MonoBehaviour
         GameObject colliderGameObjL = new GameObject("HerbicideColliderLeft", typeof(EdgeCollider2D));
         leftEdgeColl = colliderGameObjL.GetComponent<EdgeCollider2D>();
         colliderGameObjL.AddComponent<HerbicideCollider>();
-        colliderGameObjL.tag = "Enemy";
+        colliderGameObjL.tag = "Herbicides";
+        leftEdgeColl.isTrigger = true;
 
         GameObject colliderGameObjR = new GameObject("HerbicideColliderRight", typeof(EdgeCollider2D));
         rightEdgeColl = colliderGameObjR.GetComponent<EdgeCollider2D>();
         colliderGameObjR.AddComponent<HerbicideCollider>();
-        colliderGameObjR.tag = "Enemy";
+        colliderGameObjR.tag = "Herbicides";
+        leftEdgeColl.isTrigger = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        if (Input.GetKey(KeyCode.D))
+        {
+            Vector3 rightvec = gameObject.transform.right * speed;
+            gameObject.transform.position = gameObject.transform.position + rightvec;
+            trailContainer.transform.localEulerAngles = new Vector3(0, 0, -90);
+        }
+
+        waypoint = enemyCont.GetWaypoint();
+        trailContainer.transform.LookAt(waypoint);
+
         SetColliderTrail(leftTrail, rightTrail, leftEdgeColl, rightEdgeColl);
     }
 
@@ -37,7 +51,7 @@ public class HerbicideEnemy : MonoBehaviour
     {
         List<Vector2> leftPoints = new List<Vector2>();
         List<Vector2> rightPoints = new List<Vector2>();
-        for (int position = 0; position < trailRight.positionCount-1 || position < trailLeft.positionCount-1; position++)
+        for (int position = 0; position < trailRight.positionCount-7 || position < trailLeft.positionCount-7; position++)
         {
             Debug.Log(position);
             Vector3 rawLeft = trailLeft.GetPosition(position);
