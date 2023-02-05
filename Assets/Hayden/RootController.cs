@@ -140,7 +140,25 @@ public class RootController : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name);
             rootTrail.MoveCenter();
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+
+            EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
+            EnemyType enemyType = enemyController.GetEnemyType();
+
+            if (enemyType == EnemyType.WeedWacker || enemyType == EnemyType.Herbicides)
+            {
+                enemyController.Kill();
+
+                Debug.Log("Head collided with killable enemy");
+            }
+            else if (enemyType == EnemyType.LawnMower)
+            {
+                Vector3 hitLocation = collision.gameObject.transform.position;
+                rootTrail.GrowBackToPosition(hitLocation);
+                EventsManager.Instance.HeadCollidedWithInvincibleEnemy?.Invoke();
+
+                Debug.Log("Head collided with LawnMower");
+            }
         }
         else if (collision.CompareTag("Herbicides"))
         {

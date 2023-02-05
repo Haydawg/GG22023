@@ -14,6 +14,8 @@ public class EnemyController : MonoBehaviour
     private NavMeshAgent navMeshAgent;
     private int currentWaypointIndex;
     private SpriteRenderer visuals;
+    private Collider2D enemyCollider;
+    private bool isDying;
 
     private void Start()
     {
@@ -27,10 +29,16 @@ public class EnemyController : MonoBehaviour
         SetNextWaypoint();
 
         visuals = GetComponentInChildren<SpriteRenderer>();
+        enemyCollider = GetComponent<Collider2D>();
     }
 
     private void Update()
     {
+        if (isDying)
+        {
+            return;
+        }
+
         if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance < 0.5f)
         {
             SetNextWaypoint();
@@ -86,5 +94,14 @@ public class EnemyController : MonoBehaviour
     public EnemyType GetEnemyType()
     {
         return enemyType;
+    }
+
+    public void Kill()
+    {
+        isDying = true;
+        visuals.color = Color.red;
+        enemyCollider.enabled = false;
+        navMeshAgent.enabled = false;
+        Destroy(gameObject, 1.25f);
     }
 }
