@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 251065462426148601, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: caea59190aeb9a840b59c289e1b46a5f, type: 2}
     - target: {fileID: 9211134263191146368, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_Name
       value: EnemyWeedWacker Variant
@@ -67,7 +71,7 @@ PrefabInstance:
     - target: {fileID: 9211134264049822237, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5411fcf34895fbf44a2c932172044ed6, type: 3}
+      objectReference: {fileID: -121619171, guid: 1ee80adcd34068d4e83ed3206eea613a, type: 3}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 094c5378af9f2904c94b86b4be350afb, type: 3}
