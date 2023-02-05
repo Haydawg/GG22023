@@ -51,7 +51,7 @@ public class HerbicideEnemy : MonoBehaviour
     {
         List<Vector2> leftPoints = new List<Vector2>();
         List<Vector2> rightPoints = new List<Vector2>();
-        for (int position = 0; position < trailRight.positionCount-1 || position < trailLeft.positionCount-1; position++)
+        for (int position = 0; position < trailRight.positionCount-7 || position < trailLeft.positionCount-7; position++)
         {
             Debug.Log(position);
             Vector3 rawLeft = trailLeft.GetPosition(position);

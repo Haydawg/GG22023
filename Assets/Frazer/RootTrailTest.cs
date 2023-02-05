@@ -32,6 +32,9 @@ public class RootTrailTest : MonoBehaviour
 
     private GameObject trailCollider;
 
+    public List<AudioClip> growthAudio = new List<AudioClip>();
+    AudioSource audioPlayer;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -48,6 +51,10 @@ public class RootTrailTest : MonoBehaviour
 
         playerPos = new ArrayList();
         playerRot = new ArrayList();
+
+        audioPlayer = gameObject.AddComponent<AudioSource>();
+        audioPlayer.loop = false;
+        audioPlayer.playOnAwake = false;
     }
 
     private void Start()
@@ -59,64 +66,34 @@ public class RootTrailTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (maxReached == false)
+        Vector2 playerPointDistance = ((new Vector2(gameObject.transform.position.x, gameObject.transform.position.y)) - manualPoints[manualPoints.Count-1]);
+        if (playerPointDistance.magnitude > distanceBetweenPoints)
         {
-            if (Input.GetKey(KeyCode.W))
+            if (manualPoints.Count < MaxTrailSegments)
             {
-                Vector3 forVec = gameObject.transform.up * speed;
-                gameObject.transform.position = gameObject.transform.position + forVec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.D))
-            {
-                Vector3 rightvec = gameObject.transform.right * speed;
-                gameObject.transform.position = gameObject.transform.position + rightvec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.S))
-            {
-                Vector3 downVec = gameObject.transform.up * -1 * speed;
-                gameObject.transform.position = gameObject.transform.position + downVec;
-                moving = true;
-            }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                Vector3 leftVec = gameObject.transform.right * -1 * speed;
-                gameObject.transform.position = gameObject.transform.position + leftVec;
-                moving = true;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.Space))
-        {
-            ReverseGrowth();
-        }
-        else
-        {
-            Vector2 playerPointDistance = ((new Vector2(gameObject.transform.position.x, gameObject.transform.position.y)) - manualPoints[manualPoints.Count-1]);
-            if (playerPointDistance.magnitude > distanceBetweenPoints)
-            {
-                if (manualPoints.Count < MaxTrailSegments)
+                SetMaxReached(false);
+                if (moving == true)
                 {
-                    SetMaxReached(false);
-                    if (moving == true)
-                    {
-                        CreatenewPoint();
-                    }
-                }
-                else
-                {
-                    SetMaxReached(true);
+                   CreatenewPoint();
                 }
             }
-        }
-
-        if(Input.GetKey(KeyCode.E))
-        {
-            MoveCenter();
+            else
+            {
+                SetMaxReached(true);
+            }
         }
 
         SetColliderTrail(manualPoints, edgeColl);
+
+        if(moving == true)
+        {
+            if (audioPlayer.isPlaying == false)
+            {
+                int audioClipNum = Random.Range(0, growthAudio.Count - 1);
+                audioPlayer.clip = growthAudio[audioClipNum];
+                audioPlayer.Play();
+            }
+        }
 
         EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
     }
@@ -163,7 +140,7 @@ public class RootTrailTest : MonoBehaviour
     public void ReverseGrowth()
     {
         reverseTimer += Time.deltaTime;
-        if (reverseTimer >= 0.05f)
+        if (reverseTimer >= 0.1f)
         {
             GrowBack();
             reverseTimer = 0;
@@ -206,6 +183,10 @@ public class RootTrailTest : MonoBehaviour
                 manualPoints.RemoveAt(manualPoints.Count - 1);
                 Destroy(spriteTrail[spriteTrail.Count - 1], 0);
                 spriteTrail.RemoveAt(spriteTrail.Count - 1);
+
+                
+                //Move Camera
+                EventsManager.Instance.MoveCameraEvent?.Invoke(gameObject.transform.position);
             }
             else
             {
