@@ -168,6 +168,9 @@ public class RootController : MonoBehaviour
         }
         else if (collision.CompareTag("Herbicides"))
         {
+            Vector3 hitLocation = collision.gameObject.transform.position;
+            rootTrail.GrowBackToPosition(hitLocation);
+            EventsManager.Instance.HeadCollidedWithHerbicides?.Invoke();
             Debug.Log("Root collided with Herbicides");
         }
         else if (collision.CompareTag("Exit"))

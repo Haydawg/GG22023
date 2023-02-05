@@ -22,6 +22,7 @@ public class GameSessionManager : MonoBehaviour
     {
         EventsManager.Instance.TailCollidedWithEnemy += OnTailCollidedWithEnemy;
         EventsManager.Instance.TailCollidedWithHerbicides += OnTailCollidedWithHerbicides;
+        EventsManager.Instance.HeadCollidedWithHerbicides += OnHeadCollidedWithHerbicides;
         EventsManager.Instance.HeadCollidedWithInvincibleEnemy += OnHeadCollidedWithInvincibleEnemy;
         EventsManager.Instance.PlayerReachedExit += OnPlayerReachedExit;
         EventsManager.Instance.WindDamage += OnWindCausesDeath;
@@ -36,6 +37,7 @@ public class GameSessionManager : MonoBehaviour
         {
             EventsManager.Instance.TailCollidedWithEnemy -= OnTailCollidedWithEnemy;
             EventsManager.Instance.TailCollidedWithHerbicides -= OnTailCollidedWithHerbicides;
+            EventsManager.Instance.HeadCollidedWithHerbicides -= OnHeadCollidedWithHerbicides;
             EventsManager.Instance.HeadCollidedWithInvincibleEnemy -= OnHeadCollidedWithInvincibleEnemy;
             EventsManager.Instance.PlayerReachedExit -= OnPlayerReachedExit;
             EventsManager.Instance.WindDamage -= OnWindCausesDeath;
@@ -52,6 +54,11 @@ public class GameSessionManager : MonoBehaviour
     private void OnTailCollidedWithHerbicides()
     {
         Debug.Log("Live lost, reason: Tail collision with herbicides");
+        PlayerLosesOneLive();
+    }
+    private void OnHeadCollidedWithHerbicides()
+    {
+        Debug.Log("Live lost, reason: Head collision with herbicides");
         PlayerLosesOneLive();
     }
 

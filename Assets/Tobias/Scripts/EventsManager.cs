@@ -12,6 +12,7 @@ public class EventsManager : MonoBehaviour
     public UnityAction TailCollidedWithEnemy;
     public UnityAction TailCollidedWithHerbicides;
     public UnityAction HeadCollidedWithInvincibleEnemy;
+    public UnityAction HeadCollidedWithHerbicides;
     public UnityAction PlayerHasLostAllLives;
     public UnityAction RestartGame;
     public UnityAction QuitGame;

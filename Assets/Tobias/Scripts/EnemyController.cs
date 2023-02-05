@@ -116,5 +116,11 @@ public class EnemyController : MonoBehaviour
         enemyCollider.enabled = false;
         navMeshAgent.enabled = false;
         //Destroy(gameObject, 1.25f);
+
+        if (enemyType == EnemyType.Herbicides)
+        {
+            var herbicideEnemy = GetComponentInChildren<HerbicideEnemy>();
+            herbicideEnemy.RemoveHerbicideColliders();
+        }
     }
 }
