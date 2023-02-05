@@ -34,7 +34,7 @@ Transform:
   m_Children:
   - {fileID: 4335525522882472280}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &4335525522673541519
 NavMeshAgent:
@@ -45,7 +45,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4335525522673541513}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.45
+  m_Radius: 0.1
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
