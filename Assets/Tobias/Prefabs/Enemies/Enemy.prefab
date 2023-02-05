@@ -140,6 +140,10 @@ PrefabInstance:
       propertyPath: waypointsParent
       value: 
       objectReference: {fileID: 9211134262072394131}
+    - target: {fileID: 4775775982760343317, guid: d72304b40e67640439a170b6c313fa46, type: 3}
+      propertyPath: m_Size.x
+      value: 0.66
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d72304b40e67640439a170b6c313fa46, type: 3}
